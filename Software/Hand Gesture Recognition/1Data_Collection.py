@@ -1,6 +1,5 @@
 import smbus
 import time
-import math
 
 MPU_ACCEL_XOUT1 = 0x3b
 MPU_ACCEL_XOUT2 = 0x3c
