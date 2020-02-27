@@ -1,4 +1,4 @@
-gesture=table2array(resultup1);
+gesture=table2array(result);
 n=0:600;
 m=1160:1760;
 
