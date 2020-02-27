@@ -2,23 +2,23 @@ gesture=table2array(result);
 n=0:600;
 m=1160:1760;
 
-AX1=gesture(m,1)';
-AX2=gesture(m,2)';
-AX3=gesture(m,3)';
-AX4=gesture(m,4)';
-AX5=gesture(m,5)';
-AX6=gesture(m,6)';
-plot(n,AX1(n+1),'r')
+AX=gesture(m,1)';
+AY=gesture(m,2)';
+AZ=gesture(m,3)';
+GX=gesture(m,4)';
+GY=gesture(m,5)';
+GZ=gesture(m,6)';
+plot(n,AX(n+1),'r')
 hold on
-plot(n,AX2(n+1),'g')
+plot(n,AY(n+1),'g')
 hold on
-plot(n,AX3(n+1),'b')
+plot(n,AZ(n+1),'b')
 hold on
-plot(n,AX4(n+1),'m')
+plot(n,GX(n+1),'m')
 hold on
-plot(n,AX5(n+1),'c')
+plot(n,GY(n+1),'c')
 hold on
-plot(n,AX6(n+1),'k')
+plot(n,GZ(n+1),'k')
 hold on
 legend('ACCEL_X','ACCEL_Y','ACCEL_Z','GYRO_X','GYRO_Y','GYRO_Z')
 grid on
