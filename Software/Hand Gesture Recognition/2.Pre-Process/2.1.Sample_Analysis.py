@@ -36,38 +36,27 @@ print(rows, cols)
 #     GX = result[r, 3]
 #     GY = result[r, 4]
 #     GZ = result[r, 5]
-sample = np.zeros((rows, 2), dtype='uint16')
-i = 0
+sample = np.zeros((rows, 1), dtype='int16')
 for r in range(rows):
-    if ((result[r, 0] > 75) or (result[r, 0] < -75)):
-        sample[i, 0] = r
-        sample[i, 1] = 1
-        i = i + 1
+    if ((result[r, 0] > 750) or (result[r, 0] < -750)):
+        sample[r, 0] = 1
     else:
-        if ((result[r, 1] > 75) or (result[r, 1] < -75)):
-            sample[i, 0] = r
-            sample[i, 1] = 2
-            i = i + 1
+        if ((result[r, 1] > 750) or (result[r, 1] < -750)):
+            sample[r, 0] = 1
         else:
-            if ((result[r, 2] > 225) or (result[r, 2] < 75)):
-                sample[i, 0] = r
-                sample[i, 1] = 3
-                i = i + 1
+            if ((result[r, 2] > 2250) or (result[r, 2] < 750)):
+                sample[r, 0] = 1
             else:
-                if ((result[r, 3] > 75) or (result[r, 3] < -75)):
-                    sample[i, 0] = r
-                    sample[i, 1] = 4
-                    i = i + 1
+                if ((result[r, 3] > 750) or (result[r, 3] < -750)):
+                    sample[r, 0] = 1
                 else:
-                    if ((result[r, 4] > 75) or (result[r, 4] < -75)):
-                        sample[i, 0] = r
-                        sample[i, 1] = 5
-                        i = i + 1
+                    if ((result[r, 4] > 750) or (result[r, 4] < -750)):
+                        sample[r, 0] = 1
                     else:
-                        if ((result[r, 5] > 75) or (result[r, 5] < -75)):
-                            sample[i, 0] = r
-                            sample[i, 1] = 6
-                            i = i + 1
+                        if ((result[r, 5] > 750) or (result[r, 5] < -750)):
+                            sample[r, 0] = 1
+                        else:
+                            sample[r, 0] = 0
 
 x = np.real(sample)
 save(x,'./sampleanalysis.xlsx')
