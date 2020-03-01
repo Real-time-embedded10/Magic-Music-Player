@@ -58,7 +58,7 @@ result = excel_to_matrix('./sample.xlsx')
 rows, cols = result.shape
 print(rows, cols)
 number = rows//31
-feature = np.zeros((number, 50), dtype='uint16')
+feature = np.zeros((number, 50), dtype='int16')
 
 for i in range(number):
     sample = []
