@@ -42,29 +42,29 @@ print(rows, cols)
 #     GX = result[r, 3]
 #     GY = result[r, 4]
 #     GZ = result[r, 5]
-
-sample = np.zeros((rows, 1), dtype='uint16')
+sample = np.zeros((rows, 1), dtype='int16')
 for r in range(rows):
-    if ((result[r, 0] > 75) or (result[r, 0] < -75)):
+    if ((result[r, 0] > 750) or (result[r, 0] < -750)):
         sample[r, 0] = 1
     else:
-        if ((result[r, 1] > 75) or (result[r, 1] < -75)):
+        if ((result[r, 1] > 750) or (result[r, 1] < -750)):
             sample[r, 0] = 1
         else:
-            if ((result[r, 2] > 225) or (result[r, 2] < 75)):
+            if ((result[r, 2] > 2250) or (result[r, 2] < 750)):
                 sample[r, 0] = 1
             else:
-                if ((result[r, 3] > 75) or (result[r, 3] < -75)):
+                if ((result[r, 3] > 750) or (result[r, 3] < -750)):
                     sample[r, 0] = 1
                 else:
-                    if ((result[r, 4] > 75) or (result[r, 4] < -75)):
+                    if ((result[r, 4] > 750) or (result[r, 4] < -750)):
                         sample[r, 0] = 1
                     else:
-                        if ((result[r, 5] > 75) or (result[r, 5] < -75)):
+                        if ((result[r, 5] > 750) or (result[r, 5] < -750)):
                             sample[r, 0] = 1
                         else:
                             sample[r, 0] = 0
 position = np.transpose(np.nonzero(sample))
+
 
 rows2, cols2 = position.shape
 position_judge = np.zeros((rows+1, 1), dtype='uint16')
@@ -83,11 +83,12 @@ positionmark = np.trim_zeros(positiontest)
 rows3, cols3 = positionmark.shape
 marknumber = rows3
 samplenumber = 31* marknumber
-savesample = np.zeros((samplenumber, 6), dtype='uint16')
+savesample = np.zeros((samplenumber, 6), dtype='int16')
 for i in range(marknumber):
     for r in range(30):
         for c in range(6):
             savesample[(i*31+r), c] = result[(positionmark[i, 0]-9+r), c]
+
 
 x = np.real(positionmark)
 save(x,'./positionmark.xlsx')
