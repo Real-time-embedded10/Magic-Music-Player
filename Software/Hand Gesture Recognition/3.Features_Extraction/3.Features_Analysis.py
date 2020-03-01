@@ -61,9 +61,9 @@ number = rows//31
 feature = np.zeros((number, 50), dtype='int16')
 
 for i in range(number):
-    sample = []
-    sample = result[(1*(i+1)-1):(30*(i+1)-1), :]
-    print(i)
+    sample = np.zeros((30, 6), dtype='int16')
+    sample = result[(i*31-31):(31*i-1), :]
+    # print(i)
     mean_ax, median_ax, var_ax, std_ax, diff_ax = feature_set(sample[:, 0])
     mean_ay, median_ay, var_ay, std_ay, diff_ay = feature_set(sample[:, 1])
     mean_az, median_az, var_az, std_az, diff_az = feature_set(sample[:, 2])
@@ -92,7 +92,6 @@ for i in range(number):
                         correlation_xy_g, correlation_xz_g, correlation_yz_g, correlation_mean_g]
 
 x = np.real(feature)
+
 save(x,'./feature.xlsx')
-
-
 
