@@ -39,32 +39,32 @@ print(rows, cols)
 sample = np.zeros((rows, 2), dtype='uint16')
 i = 0
 for r in range(rows):
-    if ((result[r, 0] > 5000) or (result[r, 0] < -5000)):
+    if ((result[r, 0] > 50) or (result[r, 0] < -50)):
         sample[i, 0] = r
         sample[i, 1] = 1
         i = i + 1
     else:
-        if ((result[r, 1] > 5000) or (result[r, 1] < -5000)):
+        if ((result[r, 1] > 50) or (result[r, 1] < -50)):
             sample[i, 0] = r
             sample[i, 1] = 2
             i = i + 1
         else:
-            if ((result[r, 2] > 20000) or (result[r, 2] < 10000)):
+            if ((result[r, 2] > 200) or (result[r, 2] < 100)):
                 sample[i, 0] = r
                 sample[i, 1] = 3
                 i = i + 1
             else:
-                if ((result[r, 3] > 5000) or (result[r, 3] < -5000)):
+                if ((result[r, 3] > 50) or (result[r, 3] < -50)):
                     sample[i, 0] = r
                     sample[i, 1] = 4
                     i = i + 1
                 else:
-                    if ((result[r, 4] > 5000) or (result[r, 4] < -5000)):
+                    if ((result[r, 4] > 50) or (result[r, 4] < -50)):
                         sample[i, 0] = r
                         sample[i, 1] = 5
                         i = i + 1
                     else:
-                        if ((result[r, 5] > 5000) or (result[r, 5] < -5000)):
+                        if ((result[r, 5] > 50) or (result[r, 5] < -50)):
                             sample[i, 0] = r
                             sample[i, 1] = 6
                             i = i + 1
