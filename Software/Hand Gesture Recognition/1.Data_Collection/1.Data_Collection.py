@@ -31,13 +31,13 @@ bus = smbus.SMBus(1)
 bus.write_byte_data(address, MPU_POWER1, 0)
 
 while (1):
-    AX = read_word_2c(MPU_ACCEL_XOUT1) / 16384.0
-    AY = read_word_2c(MPU_ACCEL_YOUT1) / 16384.0
-    AZ = read_word_2c(MPU_ACCEL_ZOUT1) / 16384.0
+    AX = read_word_2c(MPU_ACCEL_XOUT1) / 16384.0 /100
+    AY = read_word_2c(MPU_ACCEL_YOUT1) / 16384.0 / 100
+    AZ = read_word_2c(MPU_ACCEL_ZOUT1) / 16384.0 / 100
     
-    GX = read_word_2c(MPU_GYRO_XOUT1)
-    GY = read_word_2c(MPU_GYRO_YOUT1)
-    GZ = read_word_2c(MPU_GYRO_ZOUT1)
+    GX = read_word_2c(MPU_GYRO_XOUT1) / 100
+    GY = read_word_2c(MPU_GYRO_YOUT1) / 100
+    GZ = read_word_2c(MPU_GYRO_ZOUT1) / 100
     
     #print('AX =', AX, 'AY = ', AY,'AZ = ',AZ)
     #print('GX =', GX, 'GY = ', GY,'GZ = ',GZ)
