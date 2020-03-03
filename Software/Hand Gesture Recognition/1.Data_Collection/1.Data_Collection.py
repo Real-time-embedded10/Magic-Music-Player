@@ -61,4 +61,4 @@ while (1):
         file_handle.write('  ')
         file_handle.write(GZ2)
         file_handle.write('\n')
-    time.sleep(0.005)
+    time.sleep(0.05)
