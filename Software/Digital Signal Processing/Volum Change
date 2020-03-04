@@ -6,6 +6,7 @@ int16_t pcm[1024] = read in some pcm data; //Take 1024 samples for PCM data.
 int32_t pcmvol;
  for (ctr = 0; ctr < 1024; ctr++) {
      pcmvol = pcm[ctr] * 2; //Double the Volum
+     //pcmvol = pcm[ctr] / 2; //Reducing the volum
      if (pcmval < 32767 && pcmval > -32768) {
          pcm[ctr] = pcmval
      } else if (pcmval > 32767) {
