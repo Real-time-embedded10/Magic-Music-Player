@@ -1,6 +1,7 @@
 gesture=table2array(result);
-n=0:600;
-m=1160:1760;
+[row, col] = size(gesture)
+n=1:(row-1);
+m=1:row;
 
 AX=gesture(m,1)';
 AY=gesture(m,2)';
