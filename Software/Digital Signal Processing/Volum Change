@@ -1,5 +1,7 @@
-/*The principle of audio data increase or decrease is mainly to multiply the sampled data by a number or divide by a number, but pay attention to overflow processing.*/
-/*If the value of the sampling point multiplied by the expansion factor is less than -32768 or greater than 32768, the value sampled here can only take -32768 or 32768.*/
+/*The principle of audio data increase or decrease is mainly to multiply the sampled data by a number or divide by a number, but pay 
+attention to overflow processing.*/
+/*If the value of the sampling point multiplied by the expansion factor is less than -32768 or greater than 32768, the value sampled 
+here can only take -32768 or 32768.*/
 
 //Increase the volume of the PCM data by twice.
 int16_t pcm[1024] = read in some pcm data; //Take 1024 samples for PCM data.
