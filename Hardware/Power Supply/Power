@@ -11,3 +11,17 @@ When the power supply voltage or current does not reach 5V / 2A, the main sympto
 -The system starts repeatedly.
 When the above situations occur, although the Raspberry Pi will work, it will be unstable and even crash.
 
+Several possible ways to power the Raspberry Pi:
+  Method 1:
+Power is supplied through the Micro USB interface, and 5V / 2A DC power is sufficient. This method is usually used when experimenting
+early in the design. Depending on the requirements of the final product, other mobile power may need to be provided for the Raspberry
+Pi.
+  Method 2: 
+Power is supplied through the GPIO interface. The Raspberry Pi's GPIO interface can also accept DC input, but it is different from the
+first method: the GPIO power supply has no fuse. When the voltage or current is too high, it is easy to burn the board directly. The
+wiring method is as follows: Connect the positive pole of 5v current to pin 2 and the negative pole to pin 6.
+Method 3: 
+Direct power supply via USB interface. Directly use the USB interface to reverse power the Raspberry Pi. However, this method
+requires some changes to the Raspberry Pi's motherboard to supply power normally. Therefore, this method is generally not
+recommended.
+
