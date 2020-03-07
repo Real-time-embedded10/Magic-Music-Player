@@ -3,3 +3,11 @@ is an acceptable voltage range, but exceeding (or almost beyond) this range is p
 5V nominally, as the current consumption increases, the voltage will gradually decrease. If the voltage drops to a certain level, the
 Raspberry Pi will be underpowered and cannot work properly.
 
+When the power supply voltage or current does not reach 5V / 2A, the main symptoms of insufficient power supply of the Raspberry Pi are:
+-There are corresponding symbols in the upper right corner of the monitor linked to the HDMI interface or the upper right corner of the
+  system desktop.
+-The main board's red indicator is blinking or off.
+-The display flickers frequently.
+-The system starts repeatedly.
+When the above situations occur, although the Raspberry Pi will work, it will be unstable and even crash.
+
