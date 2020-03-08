@@ -1,5 +1,4 @@
-The recommended power supply for the Raspberry Pi 3B is 5V2.5A ~ 5V3A. It is generally considered that 5V ± 5% (that is, 4.75V ~ 5.25V)
-is an acceptable voltage range, but exceeding (or almost beyond) this range is prone to problems. Although the power adapters all output
+The recommended power supply for the Raspberry Pi 3B is 5V2.5A ~ 5V3A. It is generally considered that 5V ± 5% (that is, 4.75V ~ 5.25V) is an acceptable voltage range, but exceeding (or almost beyond) this range is prone to problems. Although the power adapters all output
 5V nominally, as the current consumption increases, the voltage will gradually decrease. If the voltage drops to a certain level, the
 Raspberry Pi will be underpowered and cannot work properly.
 
