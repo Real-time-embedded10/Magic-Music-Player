@@ -1,5 +1,6 @@
 ges = 6; % 6 gesture: forward, backward, up, down, left, right
-[sample,num] = size(feature); 
+fea = feature/(10^4)
+[sample,num] = size(fea); 
 w = zeros(ges,num); 
 y = zeros(ges,sample); 
 b = zeros(ges,1); 
@@ -9,9 +10,9 @@ y(i,(i-1)*(sample/ges)+1:i*(sample/ges)) = 1;
 end
 
 
-loss_t = zeros(1,1500);
+loss_t = zeros(1,2000);
 
-for step = 1:1500 
+for step = 1:2000 
 w_gre = zeros(ges,num); 
 b_gre = zeros(ges,1); 
 loss = 0; 
@@ -51,8 +52,11 @@ w_gre(i,j) = (loss_new2 - loss)/0.0001;
 end
 end
 
-b = b - b_gre 
+b = b - b_gre
 w = w - w_gre
 loss_t(step) = loss;
 end
 % Output are 'w' and 'b'
+
+m = 1:1999;
+plot (m, loss_t(m+1))
