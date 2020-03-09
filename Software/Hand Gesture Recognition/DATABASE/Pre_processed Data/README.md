@@ -1,1 +1,1 @@
-
+A total of 1,080 samples from 6 people for 6 hand gestures (30 samples pre person pre gesture) were segmented from the original database, and for each gesture, there are 180 samples. Each file includes samples of one of these hand movements. 
