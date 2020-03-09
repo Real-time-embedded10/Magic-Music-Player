@@ -25,12 +25,6 @@ def save(data,path):
         ws.append(row)
     wb.save(path)
 
-# def addzeros (array):
-#     rows, cols = array.shape
-#     zeros = np.zeros((rows, 1), dtype='uint16')
-#     array = np.vstack((array,zeros))
-#     return array
-
 result = excel_to_matrix('./result.xlsx')
 rows, cols = result.shape
 print(rows, cols)
@@ -44,22 +38,22 @@ print(rows, cols)
 #     GZ = result[r, 5]
 sample = np.zeros((rows, 1), dtype='int16')
 for r in range(rows):
-    if ((result[r, 0] > 750) or (result[r, 0] < -750)):
+    if ((result[r, 0] > 700) or (result[r, 0] < -700)):
         sample[r, 0] = 1
     else:
-        if ((result[r, 1] > 750) or (result[r, 1] < -750)):
+        if ((result[r, 1] > 700) or (result[r, 1] < -700)):
             sample[r, 0] = 1
         else:
-            if ((result[r, 2] > 2250) or (result[r, 2] < 750)):
+            if ((result[r, 2] > 2200) or (result[r, 2] < 700)):
                 sample[r, 0] = 1
             else:
-                if ((result[r, 3] > 750) or (result[r, 3] < -750)):
+                if ((result[r, 3] > 700) or (result[r, 3] < -700)):
                     sample[r, 0] = 1
                 else:
-                    if ((result[r, 4] > 750) or (result[r, 4] < -750)):
+                    if ((result[r, 4] > 700) or (result[r, 4] < -700)):
                         sample[r, 0] = 1
                     else:
-                        if ((result[r, 5] > 750) or (result[r, 5] < -750)):
+                        if ((result[r, 5] > 700) or (result[r, 5] < -700)):
                             sample[r, 0] = 1
                         else:
                             sample[r, 0] = 0
