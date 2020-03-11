@@ -1,3 +1,0 @@
-The Raspberry Pi 3b comes with a Bluetooth device. It is possible to connect directly to the Raspberry Pi with the mobile phone's Bluetooth. 
-When Bluetooth and wifi are used at the same time, music playback may not be smooth. （Need a csr 4.0 Bluetooth adapter to connect to a Raspberry Pi?）
-Chinese Reference: https://blog.csdn.net/qq_27664167/article/details/79311733
