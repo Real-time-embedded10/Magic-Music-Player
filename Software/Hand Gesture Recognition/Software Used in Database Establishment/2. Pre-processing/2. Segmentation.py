@@ -25,6 +25,7 @@ def save(data,path):
         ws.append(row)
     wb.save(path)
 
+# Read the original information obtain from sensor 
 result = excel_to_matrix('./result.xlsx')
 rows, cols = result.shape
 print(rows, cols)
@@ -59,7 +60,7 @@ for r in range(rows):
                             sample[r, 0] = 0
 position = np.transpose(np.nonzero(sample))
 
-
+# Identify whether the gesture is
 rows2, cols2 = position.shape
 position_judge = np.zeros((rows+1, 1), dtype='uint16')
 for r in range(rows2):
@@ -71,17 +72,18 @@ for r in range(rows2-1):
     if (position[r, 0] - position_judge[r, 0] >= 20):
         if (position[r+1, 0] - position_judge[r+1, 0] <= 2):
             positiontest[i, 0] = position[r, 0]
-            i = i+1
+            i = i + 1
 
+# Hand Geasture Segmentation
 positionmark = np.trim_zeros(positiontest)
 rows3, cols3 = positionmark.shape
 marknumber = rows3
-samplenumber = 31* marknumber
+samplenumber = 31 * marknumber
 savesample = np.zeros((samplenumber, 6), dtype='int16')
 for i in range(marknumber):
     for r in range(30):
         for c in range(6):
-            savesample[(i*31+r), c] = result[(positionmark[i, 0]-9+r), c]
+            savesample[(i * 31 + r), c] = result[(positionmark[i, 0] - 9 + r), c]
 
 
 x = np.real(positionmark)
