@@ -1,1 +1,1 @@
-
+The work of pre-processing is for the purpose of removing unwanted noise or useless (static) gesture as much as possible and remaining enough useful gesture information. In this step, the Region of Interest (interested hand area) for each gesture is preliminarily segmented as a 30x6 matrix, including 30 data of six axises respectively.
