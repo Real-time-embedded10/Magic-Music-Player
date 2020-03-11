@@ -11,7 +11,7 @@ the former two represent the average level of a set of data,
 and the latter three are statistics describing the degree of dispersion of data.<br>
 >* Skewness of the signal of each axis, equation 1. By comparing the sample with the normal (symmetrical) distribution,
  it measures the asymmetry situation of the sample. Values far from zero means the skewed degree and its signal reflects the direction.
->![](https://github.com/Real-time-embedded10/Magic-Music-Player/blob/master/Software/Hand%20Gesture%20Recognition/Software%20Used%20in%20Database%20Establishment/3.%20Feature%20Extraction/Features%20Equation/skewness.jpg)    (1)<br>
+                                       >![](https://github.com/Real-time-embedded10/Magic-Music-Player/blob/master/Software/Hand%20Gesture%20Recognition/Software%20Used%20in%20Database%20Establishment/3.%20Feature%20Extraction/Features%20Equation/skewness.jpg)(1)<br>
 >* Kurtosis of the signal of each axis, equation 2. 
  High Kurtosis means that the increase of variance is caused by some extreme values of low probability, 
  which is much greater or less than the average value. 
