@@ -4,22 +4,19 @@ This project aims to design a real-time gesture-based Magic Music System, capabl
 
 Main Function
 --
-Export source from Mobile phone/PC; <br>
-Equipped Control UI on mobile device; <br>
+Export source from PC; <br>
+Equipped control UI on PC; <br>
+Recognise Hand Gesture in real time; <br>
 Change music tone/volume by gestures in the process of playing music.<br>
 
 Hardware
 --
-Graphical User Interface: Mobile Devices<br>
-Communication: Socket Communication<br>
-Micro Processor: Raspberry Pi<br>
-Sensors of Wearable Gloves: Accelerometer<br>
-Speaker: Audio Player<br>
+Graphical User Interface: PC<br>
+Sensors of Hand Gesture: Accelerometer<br>
+Real-time Hand Gesture Recognition: Raspberry Pi<br>
 
 Software
 --
-Communication system to realize wireless connection bewteen mobile devices and respberry pi.<br>
+Socket Communication system to realize wireless connection bewteen PC and respberry pi.<br>
 Marchine learning model to classify hand gestures.<br>
 Digital signal processing algorithm to process input song.<br>
-(Maybe concurrent programming is needed to guarantee the response time.)
-
