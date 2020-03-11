@@ -1,1 +1,1 @@
-All code here which is written in python and MATLAB, is only used for data pre-analysis or model training. Code in C++ is written for raspberry pi to achieve the final goal in real time.
+The aim is to find a practical process methond (for example, what parameters are better for segmentation, which features are useful for classification, etc.) that can be used in the final real-time program. 
