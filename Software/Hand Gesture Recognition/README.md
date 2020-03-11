@@ -1,3 +1,8 @@
+Note
+--
+All code written in python and MATLAB is only used for data pre-analysis or model training. Only code in C++ is written for raspberry pi to achieve the final goal in real time.<br>
+<br>
+
 Introduction
 --
 A real-time sensor-based dynamic hand gesture recognition system in raspberry pi, capable of automatically identifying whether a gesture is inputted and then translating it in the form of text, is introduced. <br>
@@ -22,7 +27,3 @@ The purpose of files in folder "Software Used in Testing" is to test the success
 Real Time Recognition System
 --
 After completing a great processing method and trained model, the final real-time recognition system is mentioned in folder "Real Time Recognition System". It can segment, process and then classify gestures in real time. <br>
-
-Note
---
-All code written in python and MATLAB is only used for data pre-analysis or model training. Only code in C++ is written for raspberry pi to achieve the final goal in real time.
