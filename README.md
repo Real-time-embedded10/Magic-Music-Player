@@ -17,6 +17,6 @@ Real-time Hand Gesture Recognition: Raspberry Pi<br>
 
 Software
 --
-Socket Communication system to realize wireless connection bewteen PC and respberry pi.<br>
 Marchine learning model to classify hand gestures.<br>
 Digital signal processing algorithm to process input song.<br>
+Socket Communication system to realize wireless connection bewteen PC and respberry pi.<br>
