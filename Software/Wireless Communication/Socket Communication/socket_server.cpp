@@ -1,3 +1,4 @@
+//The Raspberry Pi will act as a server to send the collected data to the client.
 #include <iostream>
 #include <unistd.h>
 #include <cstring>
