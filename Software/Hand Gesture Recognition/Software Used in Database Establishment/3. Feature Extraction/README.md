@@ -28,6 +28,6 @@ and the latter three are statistics describing the degree of dispersion of data.
  
 >![](https://github.com/Real-time-embedded10/Magic-Music-Player/blob/master/Software/Hand%20Gesture%20Recognition/Software%20Used%20in%20Database%20Establishment/3.%20Feature%20Extraction/Features%20Equation/correlation%20coefficient.jpg)                 (3)<br>
  
- >* Average of the 7th to 10th data and the 12th to 16th data. 
+ * Average of the 7th to 10th data and the 12th to 16th data. 
  After comparing differences among these six gestures samples, 
  the part from 7th to 10th data and the part form the 12th to 16th data are usually important.<br>
