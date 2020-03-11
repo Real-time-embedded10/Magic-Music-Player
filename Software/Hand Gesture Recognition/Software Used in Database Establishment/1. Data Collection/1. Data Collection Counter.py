@@ -30,6 +30,7 @@ def read_word_2c(adr):
 bus = smbus.SMBus(1) # 1 means '/dev/i2c-1'
 bus.write_byte_data(address, MPU_POWER1, 0)
 
+# Initialize the matrix that will be used for the counter
 test_old = np.zeros((23, 1), dtype='int16')
 test_new = np.zeros((23, 1), dtype='int16')
 number = 0
@@ -70,7 +71,7 @@ while (1):
         test_new[r] = test_old[r+1]  # the r itme of position_judge is equal to the (r-1) itme of postion.
     test_old = test_new
    
-    # Detect hand gesture
+    # Counter
     if (sum(test_new[0:20]) == 0) & (test_new[20] == 1) & (sum(test_new[21:23]) != 0):
         number = number+1
         print(number)
