@@ -80,18 +80,18 @@ void PlayerControlsL::slotUpdate(QByteArray datagram)
     QString cmd(datagram);
     if(cmd == "1"){//播放
         emit play();
-    }else if(cmd == "2"){//暂停
+    }else if(cmd == "2"){//Pause
         emit  pause();
-    }else if(cmd == "3"){//停止
+    }else if(cmd == "3"){//STOP
         emit stop();
-    }else if(cmd == "4"){//下一曲
+    }else if(cmd == "4"){//NEXT SONG
         emit  next();
-    }else if(cmd == "5"){//上一曲
+    }else if(cmd == "5"){//PREVIOUS
         emit  previous();
-    }else if(cmd == "6"){//音量++
+    }else if(cmd == "6"){//VOLUME++
         m_volume++;
         emit changeVolume(m_volume);
-    }else if(cmd == "7"){//音量--
+    }else if(cmd == "7"){//VOLUME--
         m_volume--;
         emit changeVolume(m_volume);
     }/*else if(cmd == "8"){//
