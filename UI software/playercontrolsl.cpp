@@ -78,7 +78,7 @@ void PlayerControlsL::slotUpdate(QByteArray datagram)
 {
     qDebug()<<"datagram---"<<datagram;
     QString cmd(datagram);
-    if(cmd == "1"){//播放
+    if(cmd == "1"){//PLAY
         emit play();
     }else if(cmd == "2"){//Pause
         emit  pause();
