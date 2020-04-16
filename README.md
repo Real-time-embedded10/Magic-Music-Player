@@ -53,8 +53,8 @@ Codes used to [machine learning model training](https://github.com/Real-time-emb
 Contributors
 --
 Xinyun Jiang (2227272J): Hand Gesture Recognition.<br>
-Yang Ding (): UI Design, Digital Signal Processing, Communication. <br>
-Lianfeng Wu (): Hareware Design, Communication. <br>
+Yang Ding (): UI Design, Digital Signal Processing. <br>
+Lianfeng Wu (): Hareward Design. <br>
 
 
 
