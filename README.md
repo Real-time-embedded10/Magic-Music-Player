@@ -24,15 +24,15 @@ Communication system to realize wireless connection bewteen PC and respberry pi.
 
 Our Work
 --
-[**Hardware**](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Hardware)
+[***Hardware***](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Hardware)
 
 [PCB image]<br>
 
-[**UI Design**](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/UI%20software)<br>
+[***UI Design***](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/UI%20software)<br>
 
 [image]<br>
 
-[**Software**](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software)<br>
+[***Software***](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software)<br>
 
 ![](https://github.com/Real-time-embedded10/Magic-Music-Player/blob/master/Image/Software.jpg)<br>
 
