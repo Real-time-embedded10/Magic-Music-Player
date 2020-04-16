@@ -26,12 +26,16 @@ Our Work
 
 [PCB image]<br>
 
+[**UI Design**](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/UI%20software)<br>
+
+[image]<br>
+
 [**Software**](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software)<br>
 
 [Flow Chart]<br>
 
-Our Software contains three parts:<br>
-[*Digital Signal Processing*](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Digital%20Signal%20Processing)
+Our Software contains three parts: Digital Signal Processing, Hand Gesture Recognition and Communication.<br>
+[*Digital Signal Processing*](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Digital%20Signal%20Processing)<br>
 [image]<br>
 [introduction]<br>
 
