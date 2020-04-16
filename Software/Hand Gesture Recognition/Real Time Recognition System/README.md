@@ -43,19 +43,12 @@ Then <br>
 This demo is used to show how to recognize gesture in real time, and the correspondence between classification results and gestures is as follows. <br>
 <br>
 |ClassificationResult|   Gesture   |
-|--------------------|-------------|
 |         1          |   Forward   |
-|--------------------|-------------|
 |         2          |   Backward  |
-|--------------------|-------------|
 |         3          |    Left     |
-|--------------------|-------------|
 |         4          |    Right    |
-|--------------------|-------------|
 |         5          |     Up      |
-|--------------------|-------------|
 |         6          |    Down     |
-|--------------------|-------------|
 <br>
 Make sure that files: `CMakeLists.txt`, `MPU6050_Registers.h`, `MPU6050_Types.h`, `MPU6050.h`, `MPU6050.cpp`, `Segmentation.h`,`Segmentation.cpp`, `FeatureExtraction.h`, `FeatureExtraction.cpp` and `FeatureExtraction_demo.cpp` are in one folder. <br>
 Then <br>
