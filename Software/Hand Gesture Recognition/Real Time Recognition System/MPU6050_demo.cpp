@@ -28,8 +28,8 @@ int main() {
     uint32_t sample_count = 0;
     uint32_t sample_time = 0; // ms
     uint32_t last_sample_time = 0; // ms
-    while (sample_count < 60) {
-        while (sample_time - last_sample_time < 20) {
+    while (sample_count < 1000) {
+        while (sample_time - last_sample_time < 50) {
             sample_time = millis();
         }
         last_sample_time = sample_time;
