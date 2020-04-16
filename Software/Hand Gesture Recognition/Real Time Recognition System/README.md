@@ -43,6 +43,7 @@ Then <br>
 This demo is used to show how to recognize gesture in real time, and the correspondence between classification results and gestures is as follows. <br>
 <br>
 |ClassificationResult|   Gesture   |
+|--------------------|-------------|
 |         1          |   Forward   |
 |         2          |   Backward  |
 |         3          |    Left     |
