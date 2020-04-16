@@ -2,7 +2,7 @@ Magic-Music-Player
 ==
 This project aims to design a real-time gesture-based Magic Music System, capable of adding sound effects (including tone and/or volume) in real time using defined hand gestures.
 
-##Introduction
+Introduction
 --
 **Main Function**<br>
 Export source from PC; <br>
@@ -31,11 +31,11 @@ Our Work
 [Flow Chart]<br>
 
 Our Software contains three parts:<br>
-#[Digital Signal Processing](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Digital%20Signal%20Processing)
+[Digital Signal Processing](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Digital%20Signal%20Processing)
 
-#[Hand Gesture Recognition](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Hand%20Gesture%20Recognition)
+[Hand Gesture Recognition](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Hand%20Gesture%20Recognition)
 
-#[Wireless Communication](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Wireless%20Communication)
+[Wireless Communication](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Wireless%20Communication)
 
 
 Contributors
