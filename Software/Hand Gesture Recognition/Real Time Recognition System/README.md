@@ -6,15 +6,15 @@ Requirement
 --
 [WiringPi library](http://wiringpi.com/)<br>
 
-    sudo apt-get install wiringpi<br>
+    sudo apt-get install wiringpi
 
 MPU6050_demo
 --
 This demo is used to show how to achieve data collection in real time at 20Hz sampling rate. <br>
 <br>
 Make sure that files: `CMakeLists.txt`, `MPU6050_Registers.h`, `MPU6050_Types.h`, `MPU6050.h`, `MPU6050.cpp` and `MPU6050_demo.cpp` are in one folder. <br>
-Then <br>
-        cmake .
+Then<br>
+    cmake .
         make
         ./main
 
