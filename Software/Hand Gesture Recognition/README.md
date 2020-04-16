@@ -12,7 +12,7 @@ The work is summarized as follows.<br>
 >* A method that can automatically determine whether a gesture is inputted and segment useful information was developed, and it tries to reduce noise interference as much as possible.<br> 
 >* By using several statistical algorithms, 21 features were extracted to represent each original sample, which reduces the computational complexity and increases classification successful rate.<br>
 >* Using supervised machine learning algorithms, a classifier model was established which can complete classification effectively in a relatively short time.<br>
-
+<br>
 Here are four folders, which are DATABASE, Real Time Recognition System, Software Used in Database Establishment and Software Used in Testing.<br>
 >* In folder "DATABASE", original data of these six gestures collected from sensor and pre-processed database used for machine learning model training are available.<br>
 >* In folder "Real Time Recognition System", four demos and relevant source files about how to use proposed system to recognize gesture in real time are offered. All programs are written in C++ and implemented on the Raspberry Pi. <br>
