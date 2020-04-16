@@ -22,6 +22,16 @@ Communication system to realize wireless connection bewteen PC and respberry pi.
 
 Our Work
 --
+[Hardware]<https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Hardware>
+
+[Software]<https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software>
+Our Software contains three parts:
+[Digital Signal Processing]<https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Digital%20Signal%20Processing>
+
+[Hand Gesture Recognition]<https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Hand%20Gesture%20Recognition>
+
+[Wireless Communication]<https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Wireless%20Communication>
+
 
 Contributors
 --
