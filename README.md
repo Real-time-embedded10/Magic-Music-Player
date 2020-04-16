@@ -2,7 +2,7 @@ Magic-Music-Player
 ==
 This project aims to design a real-time gesture-based Magic Music System, capable of adding sound effects (including tone and/or volume) in real time using defined hand gestures.<br>
 
-![]https://github.com/Real-time-embedded10/Magic-Music-Player/blob/master/Image/Gesture%20Based%20Music%20Player.jpg 
+![](https://github.com/Real-time-embedded10/Magic-Music-Player/blob/master/Image/Gesture%20Based%20Music%20Player.jpg) 
 
 Introduction
 --
