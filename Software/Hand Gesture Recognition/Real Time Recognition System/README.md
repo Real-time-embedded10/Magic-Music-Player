@@ -1,6 +1,6 @@
 Real Time Recognition System
 ==
-Here are four demos provided to show how to acheice each stage of the proposed system to recognize gesture in real time. <br>
+Here are four demos provided to show how to acheive each stage of the proposed system to recognize gesture in real time. <br>
 
 Requirement
 --
