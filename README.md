@@ -1,4 +1,4 @@
-#Magic-Music-Player
+Magic-Music-Player
 ==
 This project aims to design a real-time gesture-based Magic Music System, capable of adding sound effects (including tone and/or volume) in real time using defined hand gestures.
 
@@ -20,7 +20,7 @@ Marchine learning model to classify hand gestures.<br>
 Digital signal processing algorithm to process input song.<br>
 Communication system to realize wireless connection bewteen PC and respberry pi.<br>
 
-##Our Work
+Our Work
 --
 [**Hardware**](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Hardware)
 
@@ -31,14 +31,14 @@ Communication system to realize wireless connection bewteen PC and respberry pi.
 [Flow Chart]<br>
 
 Our Software contains three parts:<br>
-[Digital Signal Processing](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Digital%20Signal%20Processing)
+#[Digital Signal Processing](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Digital%20Signal%20Processing)
 
-[Hand Gesture Recognition](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Hand%20Gesture%20Recognition)
+#[Hand Gesture Recognition](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Hand%20Gesture%20Recognition)
 
-[Wireless Communication](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Wireless%20Communication)
+#[Wireless Communication](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Wireless%20Communication)
 
 
-##Contributors
+Contributors
 --
 Xinyun Jiang (2227272J): Hand Gesture Recognition.<br>
 Yang Ding (): UI Design, Digital Signal Processing, Communication. <br>
