@@ -48,7 +48,7 @@ Besides, a [DATABASE](https://github.com/Real-time-embedded10/Magic-Music-Player
 Codes used to [machine learning model training](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Hand%20Gesture%20Recognition/Software%20Used%20in%20Database%20Establishment) and [model testing](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Hand%20Gesture%20Recognition/Software%20Used%20in%20Testing) are also avaiable in this Repository.<br>
 
 [*Wireless Communication*](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Wireless%20Communication)<br>
-
+Wireless communication uses TCP-based Socket communication between the Raspberry Pi and the PC in the local area network. Here, the Raspberry Pi is used as the server and the PC as the client. After the connection, the server sends information to the client.<br>
 
 [***UI Design***](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/UI%20software)<br>
 
