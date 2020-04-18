@@ -24,17 +24,11 @@ Communication system to realize wireless connection bewteen PC and respberry pi.
 
 Our Work
 --
-[***PCB Design***](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Hardware)
+[***PCB Design***](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Hardware)<br>
 A current circuit was designed, and it can obtain information about accelerometer output, gyroscope output and temperature stably. The basic component used was MPU6050.<br>
 Here is the PCB Layout and Connection<br>
 ![](https://github.com/Real-time-embedded10/Magic-Music-Player/blob/master/Image/PCB_design.jpg)<br>
 For further information and instruction about PCB Design please [chick here](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Hardware).
-
-
-
-[***UI Design***](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/UI%20software)<br>
-
-[image]<br>
 
 [***Software***](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software)<br>
 
@@ -51,9 +45,13 @@ Our Software contains three parts: Digital Signal Processing, Hand Gesture Recog
 Besides, a [DATABASE](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Hand%20Gesture%20Recognition/DATABASE), including 6 hand gestures, is established. <br>
 Codes used to [machine learning model training](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Hand%20Gesture%20Recognition/Software%20Used%20in%20Database%20Establishment) and [model testing](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Hand%20Gesture%20Recognition/Software%20Used%20in%20Testing) are also avaiable in this Repository.<br>
 
+[*Wireless Communication*](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Wireless%20Communication)<br>
 
 
-[*Wireless Communication*](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Wireless%20Communication)
+[***UI Design***](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/UI%20software)<br>
+
+[image]<br>
+
 
 
 Contributors
