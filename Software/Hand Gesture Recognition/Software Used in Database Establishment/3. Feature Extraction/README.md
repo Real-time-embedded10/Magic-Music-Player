@@ -38,23 +38,23 @@ Evaluation result is shown as follows. <br>
 1-5 : Very poor - Very great
 | Feature | Score | Feature | Score | Feature | Score |
 |---------|-------|---------|-------|---------|-------|
-|mean of xa|3|median of xa|3|var of xa|1|
-|std of xa|4|diff of xa|4|
-|mean of ya|2|median of ya|1|var of ya|1|
-|std of ya|4|diff of ya|4|
-|mean of za|2|median of za|3|var of za|1|
-|std of za|4|diff of za|4|
-|mean of xg|1|median of xg|2|var of xg|1|
-|std of xg|2|diff of xg|1|
-|mean of yg|1|median of yg|1|var of yg|1|
-|std of yg|2|diff of yg|1|
-|mean of zg|1|median of zg|2|var of zg|1|
-|std of zg|4|diff of zg|3|
-|skew of xa|2|kurt of xa|1|skew of ya|1|kurt of ya|1|
-|skew of za|1|kurt of za|1|skew of xg|1|kurt of xg|1|
-|skew of yg|1|kurt of yg|1|skew of zg|3|kurt of zg|3|
-|cor-coe of xa and ya|1|cor-coe of xa and za|1|cor-coe of ya and za|1|mean cor-coe of a|3|
-|cor-coe of xg and yg|1|cor-coe of xg and zg|3|cor-coe of yg and zg|1|mean cor-coe of g|2|
-|wei-mean1 of xa|4|wei-mean2 of xa|5|wei-mean1 of ya|4|wei-mean2 of ya|5|
-|wei-mean1 of za|4|wei-mean2 of za|4|wei-mean1 of xg|1|wei-mean2 of xg|1|
-|wei-mean1 of yg|1|wei-mean2 of yg|1|wei-mean1 of zg|1|wei-mean2 of zg|1|
+|mean of xa|3|median of xa|3|variance of xa|1|
+|standard deviation of xa|4|difference of xa|4|
+|mean of ya|2|median of ya|1|variance of ya|1|
+|standard deviation of ya|4|difference of ya|4|
+|mean of za|2|median of za|3|variance of za|1|
+|standard deviation of za|4|difference of za|4|
+|mean of xg|1|median of xg|2|variance of xg|1|
+|standard deviation of xg|2|difference of xg|1|
+|mean of yg|1|median of yg|1|variance of yg|1|
+|standard deviation of yg|2|difference of yg|1|
+|mean of zg|1|median of zg|2|variance of zg|1|
+|standard deviation of zg|4|difference of zg|3|
+|skewness of xa|2|kurtosis of xa|1|skewness of ya|1|kurtosis of ya|1|
+|skewness of za|1|kurtosis of za|1|skewness of xg|1|kurtosis of xg|1|
+|skewness of yg|1|kurtosis of yg|1|skewness of zg|3|kurtosis of zg|3|
+|cor-coefficient of xa and ya|1|cor-coefficient of xa and za|1|cor-coefficient of ya and za|1|mean cor-coefficient of a|3|
+|cor-coefficient of xg and yg|1|cor-coefficient of xg and zg|3|cor-coefficient of yg and zg|1|mean cor-coefficient of g|2|
+|weighted-mean1 of xa|4|weighted-mean2 of xa|5|weighted-mean1 of ya|4|weighted-mean2 of ya|5|
+|weighted-mean1 of za|4|weighted-mean2 of za|4|weighted-mean1 of xg|1|weighted-mean2 of xg|1|
+|weighted-mean1 of yg|1|weighted-mean2 of yg|1|weighted-mean1 of zg|1|weighted-mean2 of zg|1|
