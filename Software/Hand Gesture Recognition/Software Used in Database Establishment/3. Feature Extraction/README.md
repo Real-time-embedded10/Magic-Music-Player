@@ -22,7 +22,7 @@ and the latter three are statistics describing the degree of dispersion of data.
  If it is greater than three, the shape of the peak is steeper than that of the normal distribution. <br>
 >![](https://github.com/Real-time-embedded10/Magic-Music-Player/blob/master/Software/Hand%20Gesture%20Recognition/Software%20Used%20in%20Database%20Establishment/3.%20Feature%20Extraction/Features%20Equation/kurtosis.jpg)(2)<br>
 , where μ is the mean.<br>
->* Correlation coefficient of the signal between any two axes of the same sensor, equation 3. 
+>* Correlation coefficient of the signal between any two axes of the sensor, equation 3. 
  It is a measure of the correlation between two variables. It is used to find the relationship between different axes.<br>
 >![](https://github.com/Real-time-embedded10/Magic-Music-Player/blob/master/Software/Hand%20Gesture%20Recognition/Software%20Used%20in%20Database%20Establishment/3.%20Feature%20Extraction/Features%20Equation/correlation%20coefficient.jpg)(3)<br>
 , where COV(x,y) is the covariance of signals of x axis and y axis, Var(x) is the variance of signal of x-axis and Var(y) is of y-axis.<br>
