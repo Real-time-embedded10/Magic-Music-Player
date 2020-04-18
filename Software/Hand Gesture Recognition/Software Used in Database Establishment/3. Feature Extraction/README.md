@@ -36,6 +36,6 @@ and the latter three are statistics describing the degree of dispersion of data.
 features were evaluated by MATLAB. For relevant codes, please [click here](https://github.com/Real-time-embedded10/Magic-Music-Player/blob/master/Software/Hand%20Gesture%20Recognition/Software%20Used%20in%20Database%20Establishment/3.%20Feature%20Extraction/analyse_feature.m). <br> 
 Evaluation result is shown as follows. <br>
 1-5 : Very poor - Very great
-| Feature | Score | Feature | Score | Feature | Score | Feature | Score | Feature | Score | Feature | Score |
-|---------|-------|---------|-------|---------|-------|---------|-------|---------|-------|---------|-------|
+| Feature | Score | Feature | Score | Feature | Score | Feature | Score |
+|---------|-------|---------|-------|---------|-------|---------|-------|
 |mean of xa|3|median of xa|3|var of xa|1|std of xa|4.5|diff of xa|4.5|
