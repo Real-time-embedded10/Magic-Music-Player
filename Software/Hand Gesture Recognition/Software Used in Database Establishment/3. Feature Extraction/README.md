@@ -67,24 +67,24 @@ Feature Selection
 Finally, 21 features were selected. They are:
 |Number|Feature|
 |------|-------|
-|[0] |   mean of xa |
-|[1] |   median of xa |
-|[2] |   standard deviation of xa|
-|[3] |   difference of xa|
-|[4] |   standard deviation of ya|
-|[5] |   difference of ya|
-|[6]        |   median of za|
-|[7]        |   standard deviation of za|
-|[8]        |   difference of za|
-|[9]        |   standard deviation of zg|
-|[10]       |   difference of zg|
-|[11]       |   skewness of zg|
-|[12]       |   kurtosis of zg|
-|[13]       |   mean of correlation coefficient of accelerometer|
-|[14]       |   correlation coefficient of x-axis and z-axis of gyroscope|
-|[15]       |   average of the 7th to 10th data of xa|
-|[16]       |   average of the 12th to 16th data of xa|
-|[17]       |   average of the 7th to 10th data of ya|
-|[18]       |   average of the 12th to 16th data of ya|
-|[19]       |   average of the 7th to 10th data of za|
-|[20]       |   average of the 12th to 16th data of za|
+|1 |   mean of xa|
+|2 |   median of xa|
+|3 |   standard deviation of xa|
+|4 |   difference of xa|
+|5 |   standard deviation of ya|
+|6 |   difference of ya|
+|7 |   median of za|
+|8 |   standard deviation of za|
+|9 |   difference of za|
+|10|   standard deviation of zg|
+|11|   difference of zg|
+|12|   skewness of zg|
+|13|   kurtosis of zg|
+|14|   mean of correlation coefficient of accelerometer|
+|15|   correlation coefficient of x-axis and z-axis of gyroscope|
+|16|   average of the 7th to 10th data of xa|
+|17|   average of the 12th to 16th data of xa|
+|18|   average of the 7th to 10th data of ya|
+|19|   average of the 12th to 16th data of ya|
+|20|   average of the 7th to 10th data of za|
+|21|   average of the 12th to 16th data of za|
