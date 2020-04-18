@@ -5,6 +5,7 @@ class CLASSIFICATION {
 public:
 	void classify(float*);
 	float classificationResult;
+	float predictResult[6];
 };
 
 #endif
