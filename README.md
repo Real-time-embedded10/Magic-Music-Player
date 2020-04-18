@@ -60,7 +60,7 @@ Contributors
 --
 Xinyun Jiang (2227272J): Hand Gesture Recognition.<br>
 Yang Ding (): UI Design, Digital Signal Processing. <br>
-Lianfeng Wu (2227370W): Hareward Design, Communication. <br>
+Lianfeng Wu (2227370W): Hardware Design, Communication. <br>
 
 
 
