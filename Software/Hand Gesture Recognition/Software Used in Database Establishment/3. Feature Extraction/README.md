@@ -35,9 +35,9 @@ and the latter three are statistics describing the degree of dispersion of data.
  --
 62 features were evaluated. For relevant codes, please [click here](https://github.com/Real-time-embedded10/Magic-Music-Player/blob/master/Software/Hand%20Gesture%20Recognition/Software%20Used%20in%20Database%20Establishment/3.%20Feature%20Extraction/analyse_feature.m). <br> 
 Evaluation result is shown as follows. <br>
-`a`: accelerometer; `g`: gyroscope; <br>
-xa: x-axis of accelerometer; ya: y-axis of accelerometer; za: z-axis of accelerometer; <br>
-xg: x-axis of gyroscope; yg: x-axis of gyroscope; zg: z-axis of gyroscope. <br>
+`a:` accelerometer; `g`: gyroscope; <br>
+`xa:` x-axis of accelerometer; ya: y-axis of accelerometer; za: z-axis of accelerometer; <br>
+`xg:` x-axis of gyroscope; yg: x-axis of gyroscope; zg: z-axis of gyroscope. <br>
 1-5 : Very poor - Very great
 | Feature | Score | Feature | Score | Feature | Score |
 |---------|-------|---------|-------|---------|-------|
