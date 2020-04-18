@@ -1,10 +1,17 @@
 #include "FeatureExtraction.h"
 
-
+/* a1, a2, a3, g1, g2, g3 are segmented hand gesture information, and each one includes 30 data of one axis.
+*  a1 | a2 | a3 | g1 | g2 | g3 
+* ----+----+----+----+----+----
+*  xa | ya | za | xg | yg | zg
+*/
 void FEATUREEXTRACTION::extractionProcess(float* a1, float* a2, float* a3, float* g1, float* g2, float* g3) {
 	feature(a1, a2, a3, g1, g2, g3);
 }
 
+/* Function of calculating 7 statistical features.
+Thay are mean, median, difference (between the maximum and minimum), variance, standard deviation, skewness and kurtosis of one axis.
+*/
 void FEATUREEXTRACTION::featureSet(float* A) {
 	float sum = 0;
 	float min = A[0];
@@ -52,6 +59,7 @@ void FEATUREEXTRACTION::featureSet(float* A) {
 	output1[6] = kurt;
 }
 
+/* Function of calculating correlation coefficient of the signal between any two axes of the sensor. */
 float FEATUREEXTRACTION::correlation(float* A, float* B) {
 	float cx = 0;
 	float cy = 0;
@@ -73,6 +81,7 @@ float FEATUREEXTRACTION::correlation(float* A, float* B) {
 	return cxy * 100;
 }
 
+/* Function of calculating mean of correlation coefficient. */
 float FEATUREEXTRACTION::correlationXYZ(float* A, float* B, float* C) {
 	float correlationXY = correlation(A, B);
 	float correlationYZ = correlation(B, C);
@@ -80,6 +89,7 @@ float FEATUREEXTRACTION::correlationXYZ(float* A, float* B, float* C) {
 	return (correlationXY + correlationYZ + correlationXZ) / 3;
 }
 
+/* Function of average of the 7th to 10th data and the 12th to 16th data. */
 void FEATUREEXTRACTION::weightedAverage(float* A) {
 	float mean1;
 	float mean2;
@@ -95,6 +105,33 @@ void FEATUREEXTRACTION::weightedAverage(float* A) {
 	output1[8] = mean2;
 }
 
+/* Calculate and extract useful features for further processing (classification). 
+* extractedFeature |                            Feature
+* -----------------+------------------------------------------------------------
+*       [0]        |   mean of xa 
+*       [1]        |   median of xa 
+*       [2]        |   standard deviation of xa
+*       [3]        |   difference of xa
+*       [4]        |   standard deviation of ya
+*       [5]        |   difference of ya
+*       [6]        |   median of za
+*       [7]        |   standard deviation of za
+*       [8]        |   difference of za
+*       [9]        |   standard deviation of zg
+*       [10]       |   difference of zg
+*       [11]       |   skewness of zg
+*       [12]       |   kurtosis of zg
+*       [13]       |   mean of correlation coefficient of accelerometer
+*       [14]       |   correlation coefficient of x-axis and z-axis of gyroscope
+*       [15]       |   average of the 7th to 10th data of xa
+*       [16]       |   average of the 12th to 16th data of xa
+*       [17]       |   average of the 7th to 10th data of ya
+*       [18]       |   average of the 12th to 16th data of ya
+*       [19]       |   average of the 7th to 10th data of za
+*       [20]       |   average of the 12th to 16th data of za
+* Further information about why choose these features is available at
+* Magic-Music-Player/Software/Hand Gesture Recognition/Software Used in Database Establishment/3. Feature Extraction/
+*/
 void FEATUREEXTRACTION::feature(float* XA, float* YA, float* ZA, float* XG, float* YG, float* ZG){
 	featureSet(XA);
 	extractedFeature[0] = output1[0];
