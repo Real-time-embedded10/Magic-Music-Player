@@ -66,7 +66,7 @@ Feature Selection
 --
 Finally, 21 features were selected. They are:
 |Number|Feature|
-|------+-------|
+|------|-------|
 |[0] |   mean of xa |
 |[1] |   median of xa |
 |[2] |   standard deviation of xa|
