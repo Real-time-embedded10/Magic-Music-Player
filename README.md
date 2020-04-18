@@ -58,7 +58,7 @@ Wireless communication uses TCP-based Socket communication between the Raspberry
 Authors
 --
 Xinyun Jiang (2227272J): I2C system, Hand Gesture Recognition (Database Establishment, Machine Learning Model Training and Real-time Recoginition System).<br>
-Yang Ding （2492952D): UI software design (UI MusicPlayer for PC & Rasberry Pi), Digital Signal Processing, Communication.<br>
+Yang Ding (2492952D): UI MusicPlayer for PC & Rasberry Pi (UI design and Digital Signal Processing), Wireless Communication.<br>
 Lianfeng Wu (2227370W): Hardware Design, Wireless Communication. <br>
 <br>
 Please follow us [Twitter](https://twitter.com/MusicTeam10).<br>
