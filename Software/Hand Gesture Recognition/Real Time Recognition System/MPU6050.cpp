@@ -28,7 +28,7 @@ MPU6050_SENSOR::MPU6050_SENSOR(uint8_t device_address) {
  * Sample Rate = Gyroscope Output Rate / (1 + SMPLRT_DIV)
  * If the low-pass filter is not enabled, that is, the low-pass filter is set to 0 or 7, the gyro output frequency is 8kHz;
  * If low-pass filter is enabled, the gyro output frequency is 1kHz.
-  */
+ */
 
 uint8_t MPU6050_SENSOR::getSampleRateDivider() {
     return wiringPiI2CReadReg8(file_handle, MPU6050_RA_SMPLRT_DIV);
@@ -58,16 +58,16 @@ void MPU6050_SENSOR::setSampleRate(unsigned int rate) {
  * The low-pass filter is determined by the lower three bits of the register MPU6050_RA_CONFIG.
  *  It is recommended to set the value to half of the sampling frequency of the Gyroscope. For example, the sampling frequency is 125Hz, and the DLPF is 42Hz.
  *          |   ACCELEROMETER    |           GYROSCOPE
- * DLPF_CFG | Bandwidth | Delay  | Bandwidth | Delay  | Sample Rate
+ * DLPF_CFG | Bandwidth | Delay  | Bandwidth |  Delay | Sample Rate
  * ---------+-----------+--------+-----------+--------+-------------
- * 0        | 260Hz     | 0ms    | 256Hz     | 0.98ms | 8kHz
- * 1        | 184Hz     | 2.0ms  | 188Hz     | 1.9ms  | 1kHz
- * 2        | 94Hz      | 3.0ms  | 98Hz      | 2.8ms  | 1kHz
- * 3        | 44Hz      | 4.9ms  | 42Hz      | 4.8ms  | 1kHz
- * 4        | 21Hz      | 8.5ms  | 20Hz      | 8.3ms  | 1kHz
- * 5        | 10Hz      | 13.8ms | 10Hz      | 13.4ms | 1kHz
- * 6        | 5Hz       | 19.0ms | 5Hz       | 18.6ms | 1kHz
- * 7        |   -- Reserved --   |   -- Reserved --   | Reserved
+ *     0    |   260Hz   | 0ms    |   256Hz   | 0.98ms |    8kHz
+ *     1    |   184Hz   | 2.0ms  |   188Hz   | 1.9ms  |    1kHz
+ *     2    |   94Hz    | 3.0ms  |   98Hz    | 2.8ms  |    1kHz
+ *     3    |   44Hz    | 4.9ms  |   42Hz    | 4.8ms  |    1kHz
+ *     4    |   21Hz    | 8.5ms  |   20Hz    | 8.3ms  |    1kHz
+ *     5    |   10Hz    | 13.8ms |   10Hz    | 13.4ms |    1kHz
+ *     6    |   5Hz     | 19.0ms |   5Hz     | 18.6ms |    1kHz
+ *     7    |   -- Reserved --   |   -- Reserved --   |  Reserved
  */
 
 uint8_t MPU6050_SENSOR::getDLPFConfig() {
@@ -102,10 +102,10 @@ void MPU6050_SENSOR::setFullScaleGyroRange(uint8_t range) {
      * Modifying it here can avoid other repeated calling steps.
      * FS_SEL | Full Scale Range   | LSB Sensitivity
      * -------+--------------------+----------------
-     * 0      | +/- 250 degrees/s  | 131 LSB/deg/s
-     * 1      | +/- 500 degrees/s  | 65.5 LSB/deg/s
-     * 2      | +/- 1000 degrees/s | 32.8 LSB/deg/s
-     * 3      | +/- 2000 degrees/s | 16.4 LSB/deg/s
+     *   0    | +/- 250 degrees/s  | 131 LSB/deg/s
+     *   1    | +/- 500 degrees/s  | 65.5 LSB/deg/s
+     *   2    | +/- 1000 degrees/s | 32.8 LSB/deg/s
+     *   3    | +/- 2000 degrees/s | 16.4 LSB/deg/s
      */
     switch (range) {
     case MPU6050_GYRO_FS_250DPS:
@@ -145,10 +145,10 @@ void MPU6050_SENSOR::setFullScaleAccelRange(uint8_t range) {
      * Modifying it here can avoid other repeated calling steps.
      * AFS_SEL | Full Scale Range | LSB Sensitivity
      * --------+------------------+----------------
-     * 0       | +/- 2g           | 16384 LSB/g
-     * 1       | +/- 4g           | 8192 LSB/g
-     * 2       | +/- 8g           | 4096 LSB/g
-     * 3       | +/- 16g          | 2048 LSB/g
+     *    0    |    +/- 2g        | 16384 LSB/g
+     *    1    |    +/- 4g        | 8192 LSB/g
+     *    2    |    +/- 8g        | 4096 LSB/g
+     *    3    |    +/- 16g       | 2048 LSB/g
      */
     switch (range) {
     case MPU6050_ACCEL_FS_2G:
@@ -169,7 +169,7 @@ void MPU6050_SENSOR::setFullScaleAccelRange(uint8_t range) {
 /* Accelerometer output
  * The output is a 16-bit signed integer of three axes, and divide them by Sensitivity to obtain the rate of acceleration of gravity.
  * In order to obtain the acceleration reading in m/s^2, the GRAVITY constant is set in the "MPU6050_Types.h" file
- */
+*/
 
 void MPU6050_SENSOR::getAccelRawData(int16_t* xa, int16_t* ya, int16_t* za) {
     *xa = wiringPiI2CReadReg8(file_handle, MPU6050_RA_ACCEL_XOUT_H);
@@ -192,8 +192,8 @@ void MPU6050_SENSOR::getAccelData(float* xa, float* ya, float* za) {
 }
 
 /* Gyroscope output
- * The output is a 16-bit signed integer of three axes, and divide them by Sensitivity to obtain the angular velocity in degrees/second.
- */
+* The output is a 16-bit signed integer of three axes, and divide them by Sensitivity to obtain the angular velocity in degrees/second.
+*/
 
 void MPU6050_SENSOR::getGyroRawData(int16_t* xg, int16_t* yg, int16_t* zg) {
     *xg = wiringPiI2CReadReg8(file_handle, MPU6050_RA_GYRO_XOUT_H);
@@ -217,8 +217,8 @@ void MPU6050_SENSOR::getGyroData(float* xg, float* yg, float* zg) {
 
 
 /* Temperature output
- * The output is a 16-bit signed integer and needs to be converted in degrees Celsius.
- */
+* The output is a 16-bit signed integer and needs to be converted in degrees Celsius.
+*/
 
 void MPU6050_SENSOR::getTempRawData(int16_t* temp) {
     *temp = wiringPiI2CReadReg8(file_handle, MPU6050_RA_TEMP_OUT_H);
@@ -233,8 +233,8 @@ void MPU6050_SENSOR::getTempData(float* temp) {
 }
 
 /* Reset temperature signal path
- * Determined by the zeroth bit of register MPU6050_RA_SIGNAL_PATH_RESET
- */
+* Determined by the zeroth bit of register MPU6050_RA_SIGNAL_PATH_RESET
+*/
 
 void MPU6050_SENSOR::resetTempSignalPath() {
     uint8_t whole_byte = wiringPiI2CReadReg8(file_handle, MPU6050_RA_SIGNAL_PATH_RESET) | 0x01;
@@ -242,8 +242,8 @@ void MPU6050_SENSOR::resetTempSignalPath() {
 }
 
 /* Reset accelerometer signal path
- * Determined by the first bit of register MPU6050_RA_SIGNAL_PATH_RESET
- */
+* Determined by the first bit of register MPU6050_RA_SIGNAL_PATH_RESET
+*/
 
 void MPU6050_SENSOR::resetAccelSignalPath() {
     uint8_t whole_byte = wiringPiI2CReadReg8(file_handle, MPU6050_RA_SIGNAL_PATH_RESET) | 0x02;
@@ -251,8 +251,8 @@ void MPU6050_SENSOR::resetAccelSignalPath() {
 }
 
 /* Reset gyroscope signal path
- * Determined by the second bit of register MPU6050_RA_SIGNAL_PATH_RESET
- */
+* Determined by the second bit of register MPU6050_RA_SIGNAL_PATH_RESET
+*/
 
 void MPU6050_SENSOR::resetGyroSignalPath() {
     uint8_t whole_byte = wiringPiI2CReadReg8(file_handle, MPU6050_RA_SIGNAL_PATH_RESET) | 0x04;
@@ -260,8 +260,8 @@ void MPU6050_SENSOR::resetGyroSignalPath() {
 }
 
 /* Reset all signal path
- * Determined by the zeroth bit of register MPU6050_RA_USER_CTRL
- */
+* Determined by the zeroth bit of register MPU6050_RA_USER_CTRL
+*/
 
 void MPU6050_SENSOR::resetAllSignalPath() {
     uint8_t whole_byte = wiringPiI2CReadReg8(file_handle, MPU6050_RA_USER_CTRL) | 0x01;
@@ -269,17 +269,17 @@ void MPU6050_SENSOR::resetAllSignalPath() {
 }
 
 /* FIFO buffer switch
- * Determined by register MPU6050_RA_FIFO_EN
- *   index   |  7   | 6  | 5  | 4  |   3   |  2   |  1   |  0
- * ----------+------+----+----+----+-------+------+------+-------
- *  describe | TEMP | XG | YG | ZG | ACCEL | SLV2 | SLV1 | SLV0
- * The fifth bit of the register MPU6050_RA_I2C_MST_CTRL is the FIFO_ENABLE of SLV3
- * Since multiple I2C devices are currently not used (only one device is used in this project), MST (master) and SLV (slave) related settings are not implemented
- */
+* Determined by register MPU6050_RA_FIFO_EN
+*   index   |  7   | 6  | 5  | 4  |   3   |  2   |  1   |  0
+* ----------+------+----+----+----+-------+------+------+-------
+*  describe | TEMP | XG | YG | ZG | ACCEL | SLV2 | SLV1 | SLV0
+* The fifth bit of the register MPU6050_RA_I2C_MST_CTRL is the FIFO_ENABLE of SLV3
+* Since multiple I2C devices are currently not used (only one device is used in this project), MST (master) and SLV (slave) related settings are not implemented
+*/
 
  /* FIFO config and reset
-  * The sixth bit of register MPU6050_RA_USER_CTRL is used to enable FIFO, and the second bit is used to reset FIFO.
-  */
+ * The sixth bit of register MPU6050_RA_USER_CTRL is used to enable FIFO, and the second bit is used to reset FIFO.
+ */
 
 bool MPU6050_SENSOR::getFIFOEnabled() {
     return (wiringPiI2CReadReg8(file_handle, MPU6050_RA_USER_CTRL) & 0x40) == 0x40;
@@ -301,8 +301,8 @@ void MPU6050_SENSOR::resetFIFO() {
 }
 
 /* Reset device
- * Determined by the seventh bit of the first power management register MPU6050_RA_PWR_MGMT_1
- */
+* Determined by the seventh bit of the first power management register MPU6050_RA_PWR_MGMT_1
+*/
 
 void MPU6050_SENSOR::resetDevice() {
     uint8_t whole_byte = wiringPiI2CReadReg8(file_handle, MPU6050_RA_PWR_MGMT_1) | 0x80;
@@ -310,8 +310,8 @@ void MPU6050_SENSOR::resetDevice() {
 }
 
 /* Sleep
- * Determined by the sixth bit of the first power management register MPU6050_RA_PWR_MGMT_1
- */
+* Determined by the sixth bit of the first power management register MPU6050_RA_PWR_MGMT_1
+*/
 
 bool MPU6050_SENSOR::getSleepStatus() {
     return (wiringPiI2CReadReg8(file_handle, MPU6050_RA_PWR_MGMT_1) & 0x40) == 0x40;
@@ -328,8 +328,8 @@ void MPU6050_SENSOR::setWake() {
 }
 
 /* Temperature sensor disable
- * Determined by the third bit of the first power management register MPU6050_RA_PWR_MGMT_1
- */
+* Determined by the third bit of the first power management register MPU6050_RA_PWR_MGMT_1
+*/
 
 bool MPU6050_SENSOR::getTempDisabled() {
     return (wiringPiI2CReadReg8(file_handle, MPU6050_RA_PWR_MGMT_1) & 0x08) == 0x08;
@@ -346,19 +346,19 @@ void MPU6050_SENSOR::setTemEnable() {
 }
 
 /* Clock source settings
- * Determined by the 1-3 bit of the first power management register MPU6050_RA_PWR_MGMT_1
- * The recommended setting is 1, which uses the gyroscope's X axis.
- * CLK_SEL | Clock Source
- * --------+--------------------------------------
- * 0       | Internal oscillator
- * 1       | PLL with X Gyro reference
- * 2       | PLL with Y Gyro reference
- * 3       | PLL with Z Gyro reference
- * 4       | PLL with external 32.768kHz reference
- * 5       | PLL with external 19.2MHz reference
- * 6       | Reserved
- * 7       | Stops the clock and keeps the timing generator in reset
- */
+* Determined by the 1-3 bit of the first power management register MPU6050_RA_PWR_MGMT_1
+* The recommended setting is 1, which uses the gyroscope's X axis.
+* CLK_SEL |                    Clock Source
+* --------+--------------------------------------------------------
+*    0    | Internal oscillator
+*    1    | PLL with X Gyro reference
+*    2    | PLL with Y Gyro reference
+*    3    | PLL with Z Gyro reference
+*    4    | PLL with external 32.768kHz reference
+*    5    | PLL with external 19.2MHz reference
+*    6    | Reserved
+*    7    | Stops the clock and keeps the timing generator in reset
+*/
 
 uint8_t MPU6050_SENSOR::getClockSource() {
     return wiringPiI2CReadReg8(file_handle, MPU6050_RA_PWR_MGMT_1) & 0x07;
