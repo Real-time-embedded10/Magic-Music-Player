@@ -22,11 +22,11 @@ The MPU-60X0 uses three 16-bit ADCs for the gyroscope and accelerometer, respect
 
 **Circuit Design**<br>
 The Block Diagram of MPU6050:<br>
-![](https://github.com/Real-time-embedded10/Magic-Music-Player/blob/master/Hardware/Hand%20Gesture%20Recognition/PCB%20design/MPU6050-Block%20Diagram.png)
+![](https://github.com/Real-time-embedded10/Magic-Music-Player/blob/master/Hardware/MPU6050-Block%20Diagram.png)<br>
 The above picture is the internal structure diagram of MPU6050. Among them, SCL and SDA are I2C interfaces connected to MCU. Raspberry Pi controls MPU6050 through this I2C interface. There is also an I2C interface: AUX_CL and AUX_DA. This interface can be used to connect external slave devices. For example, magnetic sensors, so that a nine-axis sensor can be formed. VLOGIC is the voltage of the IO port. This pin can be as low as 1.8V. We generally connect it directly to VDD. AD0 is the address control pin from the I2C interface (connected to MCU). This pin controls the lowest bit of the IIC address. If it is connected to GND, the I2C address of MPU6050 is: 0X68, if it is connected to VDD, it is 0X69. Note: The address here does not contain the lowest bit of data transmission (the lowest bit is used to indicate read and write).<br>
 
 The Schematic Circuit Diagram:<br>
-![](https://github.com/Real-time-embedded10/Magic-Music-Player/blob/master/Hardware/Hand%20Gesture%20Recognition/PCB%20design/Schematic%20Circuit%20Diagram.png)<br>
+![](https://github.com/Real-time-embedded10/Magic-Music-Player/blob/master/Hardware/Schematic%20Circuit%20Diagram.png)<br>
 Because the voltage working range of MPU60X0 is 2.375V-3.46V, a 3.3V low dropout voltage regulator circuit is added to the circuit diagram design to power the MPU6050, so the MPU6050 chip can be connected to the 3.3V or 5V output power of the Raspberry Pi. Pull-up resistors of 4.7K are added at both SDA and SCL, and external pull-up resistors can be eliminated. In addition, there is also a 4.7K pull-down resistor at AD0. In the actual connection, AD0 is floating, and the default I2C address is 0X68.<br>
 
-For detailed information or data related to MPU6050, please refer to [the uploaded datasheet](https://github.com/Real-time-embedded10/Magic-Music-Player/blob/master/Hardware/Hand%20Gesture%20Recognition/Datasheet/MPU-6000-Datasheet.pdf).<br>
+For detailed information or data related to MPU6050, please refer to [the uploaded datasheet](https://github.com/Real-time-embedded10/Magic-Music-Player/blob/master/Hardware/MPU-60X0-Datasheet.pdf).<br>
