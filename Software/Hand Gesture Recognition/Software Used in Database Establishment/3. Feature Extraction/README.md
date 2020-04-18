@@ -41,10 +41,10 @@ Evaluation result is shown as follows. <br>
 |mean of xa|3|median of xa|3|var of xa|1|std of xa|4|diff of xa|4|
 |mean of ya|2|median of ya|1|var of ya|1|std of ya|4|diff of ya|4|
 |mean of za|2|median of za|3|var of za|1|std of za|4|diff of za|4|
-|mean of xg|1|median of xg|2|var of xg|1|std of xg| 2 |diff of xg|1|
-|mean of yg|1|median of yg|1|var of yg|1|std of yg| 2|diff of yg|1|
-|mean of zg|1|median of zg|2|var of zg|1|std of zg| 4|diff of zg|3|
-|skew of xa|2|kurt of xa|1|skew of ya|1|kurt of ya| 1|skew of za|1|
-|kurt of za|1|skew of xg|1|kurt of xg|1|skew of yg| 1|kurt of yg|1|
-|skew of zg|3|kurt of zg|3|
+|mean of xg|1|median of xg|2|var of xg|1|std of xg|2|diff of xg|1|
+|mean of yg|1|median of yg|1|var of yg|1|std of yg|2|diff of yg|1|
+|mean of zg|1|median of zg|2|var of zg|1|std of zg|4|diff of zg|3|
+|skew of xa|2|kurt of xa|1|skew of ya|1|kurt of ya|1|
+|skew of za|1|kurt of za|1|skew of xg|1|kurt of xg|1|
+|skew of yg|1|kurt of yg|1|skew of zg|3|kurt of zg|3|
 |cor-coe of xa and ya|1|cor-coe of xa and ya|1|cor-coe of xa and ya|1|cor-coe of xa and ya|1|
