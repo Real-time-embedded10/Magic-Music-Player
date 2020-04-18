@@ -137,7 +137,7 @@ Player::Player(QWidget *parent)
     addToPlaylist(musicPathList);
 }
 
-//遍历所有的aac文件
+//Find all AAC File
 QStringList Player::findAllaacFile(QString path)
 {
     QStringList retList;
