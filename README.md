@@ -12,15 +12,17 @@ Equipped control UI on PC; <br>
 Recognise Hand Gesture in real time; <br>
 Change music tone/volume by gestures in the process of playing music.<br>
 
-**Hardware**<br>
-Graphical User Interface: PC<br>
-Sensors of Hand Gesture: Accelerometer<br>
-Real-time Hand Gesture Recognition: Raspberry Pi<br>
+**Hardware Requirement**<br>
+Accelerometer and Gyroscope: Sensors of Hand Gesture <br>
+Raspberry Pi: Real-time Hand Gesture Recognition <br>
+PC: Graphical User Interface<br>
 
-**Software**<br>
+**Software Requirement**<br>
+I2C system to obtain data from sensors. <br>
+Pre-processing method to extract useful information of hand gestures. <br>
 Marchine learning model to classify hand gestures.<br>
-Digital signal processing algorithm to process input song.<br>
-Communication system to realize wireless connection bewteen PC and respberry pi.<br>
+Communication system to realize wireless connection bewteen PC and raspberry pi.<br>
+Digital signal processing algorithm to process song based on control signal received from raspberry pi.<br>
 
 Our Work
 --
@@ -28,7 +30,7 @@ Our Work
 A current circuit was designed, and it can obtain information about accelerometer output, gyroscope output and temperature stably. The basic component used was MPU6050.<br>
 Here is the PCB Layout and Connection<br>
 ![](https://github.com/Real-time-embedded10/Magic-Music-Player/blob/master/Image/PCB_design.jpg)<br>
-For further information and instruction about PCB Design please [chick here](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Hardware).
+For further information and instruction about PCB Design please [click here](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Hardware).
 
 [***Software***](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software)<br>
 
