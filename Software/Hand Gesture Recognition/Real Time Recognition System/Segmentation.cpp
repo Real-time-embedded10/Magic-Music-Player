@@ -1,5 +1,11 @@
 #include "Segmentation.h"
 
+/* inputa1, inputa2, inputa3, inputg1, inputg2, inputg3 are real-time data read from sensor.
+*  a1 | a2 | a3 | g1 | g2 | g3 
+* ----+----+----+----+----+----
+*  xa | ya | za | xg | yg | zg
+* When detecting gesture input, run recordTarget().
+*/
 void SEGMENTATION::SegmentationProcess(float inputa1, float inputa2, float inputa3, float inputg1, float inputg2, float inputg3) {
     initialize(inputa1, inputa2, inputa3, inputg1, inputg2, inputg3);
     recordSampleData();
@@ -20,7 +26,9 @@ void SEGMENTATION::initialize(float inputa1, float inputa2, float inputa3, float
     g3 = inputg3 * 10;
 }
 
-/* Record information read from sensor in one period (1.8s), including 30 data for each axis. */
+/* Record information read from sensor in one period (1.8s), including 30 data for each axis. 
+* recordSampleNew[30][6] will be updated whenever new data is read from the sensor.
+*/
 void SEGMENTATION::recordSampleData() {
     recordSampleNew[29][0] = a1;
     recordSampleNew[29][1] = a2;
@@ -40,7 +48,11 @@ void SEGMENTATION::recordSampleData() {
     }
 }
 
-/* Detect large change of data, and the result will be used to detect whether a gesture is. */
+/* Detect large change of data, and the result will be used to detect whether a gesture is. 
+*  judgeInputResult |        0        |         1 
+* ------------------+-----------------+-------------------
+*                   | No large change | Have large change
+*/
 void SEGMENTATION::judgeInputType() {
     judgeInputResult = 0; 
     if (-700 < a1 && a1 < 700 && -700 < a2 && a2< 700 && 700 < a3 && a3 < 2200 && -700 < g1 && g1 < 700 && -700 < g2 && g2 < 700 && -700 < g3 && g3 < 700) {
@@ -72,7 +84,10 @@ void SEGMENTATION::inputGestureDetect() {
     }
 }
 
-/* When there is a gesture, recordTargetData is used to record useful information of this gesture which will be used for feature extraction.*/
+/* When there is a gesture, 
+* recordTargetData is used to record useful information of this gesture as segmentation result 
+* which will be used for feature extraction.
+*/
 void SEGMENTATION::recordTarget() {
     for (int i = 0; i < 30; i++) {
         recordTargetXA[i] = recordSampleNew[i][0];
