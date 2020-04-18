@@ -38,4 +38,7 @@ Evaluation result is shown as follows. <br>
 1-5 : Very poor - Very great
 | Feature | Score | Feature | Score | Feature | Score | Feature | Score |
 |---------|-------|---------|-------|---------|-------|---------|-------|
-|mean of xa|3|median of xa|3|var of xa|1|std of xa|4.5|diff of xa|4.5|
+|mean of xa|3|median of xa|3|variance of xa|1|standard deviation  of xa|4.5|difference of xa|4.5|
+
+variance, standard deviation and difference
+
