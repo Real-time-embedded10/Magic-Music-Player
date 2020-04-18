@@ -26,11 +26,8 @@ Our Work
 --
 [***Hardware***](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Hardware)
 
-The Shematic Circuit Diagram<br>
-![](https://github.com/Real-time-embedded10/Magic-Music-Player/blob/master/Hardware/Hand%20Gesture%20Recognition/PCB%20design/Schematic%20Circuit%20Diagram.png)<br>
-
 The PCB Layout and Connection<br>
-![](https://github.com/Real-time-embedded10/Magic-Music-Player/blob/master/Hardware/Hand%20Gesture%20Recognition/PCB%20design/PCB_Design.png)<br>
+![](https://github.com/Real-time-embedded10/Magic-Music-Player/blob/master/Image/PCB_design.jpg)<br>
 
 [***UI Design***](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/UI%20software)<br>
 
