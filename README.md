@@ -58,7 +58,7 @@ Further information and
 
 Authors
 --
-Xinyun Jiang (2227272J): I2C system, Hand Gesture Recognition.<br>
+Xinyun Jiang (2227272J): I2C system, Hand Gesture Recognition (Database Establishment, Machine Learning Model Training and Real-time Recoginition System).<br>
 Yang Ding (): UI Design, Digital Signal Processing, Communication.<br>
 Lianfeng Wu (2227370W): Hardware Design, Wireless Communication. <br>
 <br>
