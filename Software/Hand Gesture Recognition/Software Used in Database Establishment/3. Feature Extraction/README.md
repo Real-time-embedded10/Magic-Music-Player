@@ -33,12 +33,11 @@ and the latter three are statistics describing the degree of dispersion of data.
  
  Evaluation
  --
-62 features were evaluated. For relevant codes, please [click here](https://github.com/Real-time-embedded10/Magic-Music-Player/blob/master/Software/Hand%20Gesture%20Recognition/Software%20Used%20in%20Database%20Establishment/3.%20Feature%20Extraction/analyse_feature.m). <br> 
-Evaluation result is shown as follows. <br>
-`a:` accelerometer; `g`: gyroscope; <br>
-`xa:` x-axis of accelerometer; ya: y-axis of accelerometer; za: z-axis of accelerometer; <br>
-`xg:` x-axis of gyroscope; yg: x-axis of gyroscope; zg: z-axis of gyroscope. <br>
-1-5 : Very poor - Very great
+62 features were evaluated, and please [click here](https://github.com/Real-time-embedded10/Magic-Music-Player/blob/master/Software/Hand%20Gesture%20Recognition/Software%20Used%20in%20Database%20Establishment/3.%20Feature%20Extraction/analyse_feature.m) to obtain revelant codes. Evaluation result is shown as follows. <br>
+`a:` accelerometer; `g:` gyroscope; <br>
+`xa:` x-axis of accelerometer; `ya:` y-axis of accelerometer; `za:` z-axis of accelerometer; <br>
+`xg:` x-axis of gyroscope; `yg:` x-axis of gyroscope; `zg:` z-axis of gyroscope. <br>
+`1 - 5:` Very poor - Very great
 | Feature | Score | Feature | Score | Feature | Score |
 |---------|-------|---------|-------|---------|-------|
 |mean of xa|3|median of xa|3|variance of xa|1|
@@ -66,4 +65,26 @@ Evaluation result is shown as follows. <br>
 Feature Selection
 --
 Finally, 21 features were selected. They are:
-
+|Number|Feature|
+|------+-------|
+|[0] |   mean of xa |
+|[1] |   median of xa |
+|[2] |   standard deviation of xa|
+|[3] |   difference of xa|
+|[4] |   standard deviation of ya|
+|[5] |   difference of ya|
+|[6]        |   median of za|
+|[7]        |   standard deviation of za|
+|[8]        |   difference of za|
+|[9]        |   standard deviation of zg|
+|[10]       |   difference of zg|
+|[11]       |   skewness of zg|
+|[12]       |   kurtosis of zg|
+|[13]       |   mean of correlation coefficient of accelerometer|
+|[14]       |   correlation coefficient of x-axis and z-axis of gyroscope|
+|[15]       |   average of the 7th to 10th data of xa|
+|[16]       |   average of the 12th to 16th data of xa|
+|[17]       |   average of the 7th to 10th data of ya|
+|[18]       |   average of the 12th to 16th data of ya|
+|[19]       |   average of the 7th to 10th data of za|
+|[20]       |   average of the 12th to 16th data of za|
