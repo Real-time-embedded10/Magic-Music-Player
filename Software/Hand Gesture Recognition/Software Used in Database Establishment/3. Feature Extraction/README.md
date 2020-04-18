@@ -64,7 +64,10 @@ and the latter three are statistics describing the degree of dispersion of data.
 
 Feature Selection
 --
-Finally, 21 features were selected. They are:
+Finally, 21 features were selected. <br>
+![](https://github.com/Real-time-embedded10/Magic-Music-Player/blob/master/Software/Hand%20Gesture%20Recognition/Software%20Used%20in%20Database%20Establishment/3.%20Feature%20Extraction/Extracted_Features.jpg)<br>
+
+They are:<br>
 |Number|Feature|
 |------|-------|
 |1 |   mean of xa|
