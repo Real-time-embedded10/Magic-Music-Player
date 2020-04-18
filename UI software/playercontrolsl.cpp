@@ -94,11 +94,11 @@ void PlayerControlsL::slotUpdate(QByteArray datagram)
     }else if(cmd == "7"){//VOLUME--
         m_volume--;
         emit changeVolume(m_volume);
-    }/*else if(cmd == "8"){//
+    }else if(cmd == "8"){//MUTE
         emit changeMuting();
-    }else if(cmd == "9"){//
+    }else if(cmd == "9"){//CHANGERATE
        emit  changeRate();
-    }*/
+    }
 }
 
 QMediaPlayer::State PlayerControlsL::state() const
