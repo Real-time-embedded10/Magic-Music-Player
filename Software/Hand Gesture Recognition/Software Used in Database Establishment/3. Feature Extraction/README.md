@@ -47,3 +47,4 @@ Evaluation result is shown as follows. <br>
 |skew of xa|2|kurt of xa|1|skew of ya|1|kurt of ya|1|skew of za|1|
 |kurt of za|1|skew of xg|1|kurt of xg|1|skew of yg|1|kurt of yg|1|
 |skew of zg|3|kurt of zg|3|
+|cor-coe of xa and ya|1|cor-coe of xa and ya|1|cor-coe of xa and ya|1|cor-coe of xa and ya|1|
