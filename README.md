@@ -54,7 +54,6 @@ Wireless communication uses TCP-based Socket communication between the Raspberry
 
 [image]<br>
 
-Further information and 
 
 Authors
 --
