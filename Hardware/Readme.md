@@ -1,4 +1,4 @@
-MPU6050
+Hardware Design
 ==
 MPU-60X0 is the world's first 9-axis motion processor. It integrates a 3-axis MEMS gyroscope to measure angle, a 3-axis MEMS accelerometer to measure acceleration, and a scalable digital motion processor (DMP), which can be connected to a third-party digital sensor using I2C interface , such as a magnetometer. After expansion, it can output a 9-axis signal through its I2C interface. MPU-60X0 can also connect non-inertial digital sensors, such as pressure sensors, through its I2C interface. DMP receives and processes data from gyroscopes, accelerometers, and external sensors. The processing results can be read from DMP registers, or buffered by FIFO, and output posture-resolved data to the application side through the main I2C interface.<br>
 
