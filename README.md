@@ -24,10 +24,13 @@ Communication system to realize wireless connection bewteen PC and respberry pi.
 
 Our Work
 --
-[***Hardware***](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Hardware)
-
-The PCB Layout and Connection<br>
+[***PCB Design***](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Hardware)
+A current circuit was designed, and it can obtain information about accelerometer output, gyroscope output and temperature stably. The basic component used was MPU6050.<br>
+Here is the PCB Layout and Connection<br>
 ![](https://github.com/Real-time-embedded10/Magic-Music-Player/blob/master/Image/PCB_design.jpg)<br>
+For further information and instruction about PCB Design please [chick here](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Hardware).
+
+
 
 [***UI Design***](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/UI%20software)<br>
 
