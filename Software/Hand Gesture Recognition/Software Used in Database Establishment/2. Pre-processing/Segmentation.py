@@ -45,7 +45,7 @@ for r in range(rows):
         if ((result[r, 1] > 700) or (result[r, 1] < -700)):
             sample[r, 0] = 1
         else:
-            if ((result[r, 2] > 1700) or (result[r, 2] < 200)):
+            if ((result[r, 2] > 2200) or (result[r, 2] < 700)):
                 sample[r, 0] = 1
             else:
                 if ((result[r, 3] > 700) or (result[r, 3] < -700)):
