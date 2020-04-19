@@ -41,10 +41,11 @@ Our Software contains three parts: Digital Signal Processing, Hand Gesture Recog
 [introduction]<br>
 
 [*Hand Gesture Recognition*](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Hand%20Gesture%20Recognition)<br>
-![](https://github.com/Real-time-embedded10/Magic-Music-Player/blob/master/Image/HandGesture_Result.jpg)<br>
 [Here is C++ code](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Hand%20Gesture%20Recognition/Real%20Time%20Recognition%20System) that use Raspberry pi to recognize hand gesture in real time. <br>
 Besides, a [DATABASE](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Hand%20Gesture%20Recognition/DATABASE), including 6 hand gestures, is established. <br>
 Codes used to [machine learning model training](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Hand%20Gesture%20Recognition/Software%20Used%20in%20Database%20Establishment) and [model testing](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Hand%20Gesture%20Recognition/Software%20Used%20in%20Testing) are also avaiable in this Repository.<br>
+![](https://github.com/Real-time-embedded10/Magic-Music-Player/blob/master/Image/HandGesture_Result.jpg)<br>
+
 
 [*Wireless Communication*](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Wireless%20Communication)<br>
 Wireless communication uses TCP-based Socket communication between the Raspberry Pi and the PC in the local area network. Here, the Raspberry Pi is used as the server and the PC as the client. After the connection, the server sends information to the client.<br>
