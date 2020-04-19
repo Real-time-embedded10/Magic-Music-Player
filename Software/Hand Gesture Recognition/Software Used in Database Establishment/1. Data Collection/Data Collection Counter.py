@@ -61,7 +61,7 @@ while (1):
         if ((AY > 700) or (AY < -700)):
             test = 1
         else:
-            if ((AZ > 1700) or (AZ < 200)):
+            if ((AZ > 2200) or (AZ < 700)):
                 test = 1
             else:
                 if ((GX > 700) or (GX < -700)):
