@@ -33,20 +33,20 @@ Here is the PCB Layout and Connection<br>
 For further information and instruction about PCB Design please [click here](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Hardware).
 
 [***Software***](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software)<br>
-Our Software contains three parts: Digital Signal Processing, Hand Gesture Recognition and Communication.<br>
+Our Software contains three parts:Hand Gesture Recognition and UI software design(Communication and Digital signal Processing).<br>
 ![](https://github.com/Real-time-embedded10/Magic-Music-Player/blob/master/Image/Software.jpg)<br>
 
-[*Digital Signal Processing*](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Digital%20Signal%20Processing)<br>
-[image]<br>
-[introduction]<br>
-
 [*Hand Gesture Recognition*](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Hand%20Gesture%20Recognition)<br>
-A real-time sensor-based dynamic hand gesture recognition system in raspberry pi, capable of automatically identifying whether a gesture is inputted and then translating it in the form of text, is developed.<br> 
 [Here is C++ code](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Hand%20Gesture%20Recognition/Real%20Time%20Recognition%20System) that use Raspberry pi to recognize hand gesture in real time. <br>
 Besides, a [DATABASE](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Hand%20Gesture%20Recognition/DATABASE), including 6 hand gestures, is established. <br>
 Codes used to [machine learning model training](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Hand%20Gesture%20Recognition/Software%20Used%20in%20Database%20Establishment) and [model testing](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Hand%20Gesture%20Recognition/Software%20Used%20in%20Testing) are also avaiable in this Repository.<br>
 ![](https://github.com/Real-time-embedded10/Magic-Music-Player/blob/master/Image/HandGesture_Result.jpg)<br>
 
+[*UI Software Design*]()
+This project's UI design contains two parts, UI on the PC and UI on the raspberry Pi.
+[*Digital Signal Processing*](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Digital%20Signal%20Processing)<br>
+[image]<br>
+[introduction]<br>
 
 [*Wireless Communication*](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Wireless%20Communication)<br>
 Wireless communication uses TCP-based Socket communication between the Raspberry Pi and the PC in the local area network. Here, the Raspberry Pi is used as the server and the PC as the client. After the connection, the server sends information to the client.<br>
