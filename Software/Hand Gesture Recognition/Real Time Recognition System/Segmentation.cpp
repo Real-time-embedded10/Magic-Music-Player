@@ -20,7 +20,7 @@ void SEGMENTATION::SegmentationProcess(float inputa1, float inputa2, float input
 void SEGMENTATION::initialize(float inputa1, float inputa2, float inputa3, float inputg1, float inputg2, float inputg3) {
     a1 = inputa1 * 150;
     a2 = inputa2 * 300;
-    a3 = inputa3 * 100 + 500;
+    a3 = inputa3 * 100;
     g1 = inputg1 * 10;
     g2 = inputg2 * 10;
     g3 = inputg3 * 10;
@@ -55,7 +55,7 @@ void SEGMENTATION::recordSampleData() {
 */
 void SEGMENTATION::judgeInputType() {
     judgeInputResult = 0; 
-    if (-700 < a1 && a1 < 700 && -700 < a2 && a2< 700 && 700 < a3 && a3 < 2200 && -700 < g1 && g1 < 700 && -700 < g2 && g2 < 700 && -700 < g3 && g3 < 700) {
+    if (-700 < a1 && a1 < 700 && -700 < a2 && a2< 700 && 200 < a3 && a3 < 1700 && -700 < g1 && g1 < 700 && -700 < g2 && g2 < 700 && -700 < g3 && g3 < 700) {
         judgeInputResult = 0;
     }else {
         judgeInputResult = 1;
