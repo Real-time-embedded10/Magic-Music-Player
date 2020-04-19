@@ -55,7 +55,7 @@ void SEGMENTATION::recordSampleData() {
 */
 void SEGMENTATION::judgeInputType() {
     judgeInputResult = 0; 
-    if (-700 < a1 && a1 < 700 && -700 < a2 && a2< 700 && 200 < a3 && a3 < 1700 && -700 < g1 && g1 < 700 && -700 < g2 && g2 < 700 && -700 < g3 && g3 < 700) {
+    if (-700 < a1 && a1 < 700 && -700 < a2 && a2< 700 && 700 < a3 && a3 < 2200 && -700 < g1 && g1 < 700 && -700 < g2 && g2 < 700 && -700 < g3 && g3 < 700) {
         judgeInputResult = 0;
     }else {
         judgeInputResult = 1;
