@@ -52,4 +52,4 @@ make
 ```
 Tests
 --
-Please [click here](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Hand%20Gesture%20Recognition/Software%20Used%20in%20Testing)
+Two cross validation methods are proposed to test. Please [click here](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Hand%20Gesture%20Recognition/Software%20Used%20in%20Testing)
