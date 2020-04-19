@@ -22,6 +22,7 @@ address = 0x68
 # Read information
 def read_word_2c(adr):
     val = (bus.read_byte_data(address, adr) << 8) + bus.read_byte_data(address, adr + 1)
+    # The acceleration range is set from -8g to 8g.
     if (val >= 0x8000):
         return -((65535 - val) + 1)
     else:
