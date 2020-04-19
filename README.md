@@ -52,7 +52,6 @@ UI on the raspberry pi is responsible for connecting to pc and sending signal to
 DSP based on time-domain approach is used to realize changing playback rate in this project. The time-domain methods operate directly with sampled data, which is more straight-forward than frequency-domain approach. However, the frequency-domain provides more sophisticated sound modifications. So that, the frequency-domain approach will be tried in the future to improve the sound effect.
 ![](https://github.com/Real-time-embedded10/Magic-Music-Player/blob/master/Image/Theory%20of%20the%20time%20domain%20approach.png)<br>
 
-
 [*Wireless Communication*](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Wireless%20Communication)<br>
 Wireless communication uses TCP-based Socket communication between the Raspberry Pi and the PC in the local area network. Here, the Raspberry Pi is used as the client and the PC as the server. After the connection, the client sends signals to the server to call defined functions.<br>
 
