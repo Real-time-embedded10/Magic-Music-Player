@@ -33,10 +33,9 @@ Here is the PCB Layout and Connection<br>
 For further information and instruction about PCB Design please [click here](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Hardware).
 
 [***Software***](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software)<br>
-
+Our Software contains three parts: Digital Signal Processing, Hand Gesture Recognition and Communication.<br>
 ![](https://github.com/Real-time-embedded10/Magic-Music-Player/blob/master/Image/Software.jpg)<br>
 
-Our Software contains three parts: Digital Signal Processing, Hand Gesture Recognition and Communication.<br>
 [*Digital Signal Processing*](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Digital%20Signal%20Processing)<br>
 [image]<br>
 [introduction]<br>
@@ -57,9 +56,9 @@ Wireless communication uses TCP-based Socket communication between the Raspberry
 
 Authors
 --
-Xinyun Jiang (2227272J): I2C system, Hand Gesture Recognition (Database Establishment, Machine Learning Model Training and Real-time Recoginition System).<br>
-Yang Ding (2492952D): UI MusicPlayer for PC & Rasberry Pi (UI design and Digital Signal Processing), UI Communication.<br>
-Lianfeng Wu (2227370W): Hardware(PCB Design), Wireless Communication. <br>
+**tashanguanyan** - Xinyun Jiang (2227272J): I2C system, Hand Gesture Recognition (Database Establishment, Machine Learning Model Training and Real-time Recoginition System).<br>
+**YangDING0201** - Yang Ding (2492952D): UI MusicPlayer for PC & Rasberry Pi (UI design and Digital Signal Processing), UI Communication.<br>
+**LianfengWu** - Lianfeng Wu (2227370W): Hardware(PCB Design), Wireless Communication. <br>
 <br>
 Please follow us [Twitter](https://twitter.com/MusicTeam10).<br>
 
