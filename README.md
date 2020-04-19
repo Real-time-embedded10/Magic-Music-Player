@@ -49,7 +49,7 @@ UI on the raspberry pi is responsible for connecting to pc and sending signal to
 
 [*Digital Signal Processing*]()<br>
 DSP based on time-domain approach is used to realize changing playback rate in this project. The time-domain methods operate directly with sampled data, which is more straight-forward than frequency-domain approach. However, the frequency-domain provides more sophisticated sound modifications. So that, the frequency-domain approach will be tried in the future to improve the sound effect.
-![]<br>
+![](Image/Theory of the time domain approach.png)<br>
 [introduction]<br>
 
 [*Wireless Communication*](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Wireless%20Communication)<br>
