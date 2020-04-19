@@ -37,12 +37,20 @@ number = 0
 
 while (1):
     # Read information from sensor
-    AX = read_word_2c(MPU_ACCEL_XOUT1) / 10
-    AY = read_word_2c(MPU_ACCEL_YOUT1) / 10
-    AZ = read_word_2c(MPU_ACCEL_ZOUT1) / 10
-    GX = read_word_2c(MPU_GYRO_XOUT1) / 10
-    GY = read_word_2c(MPU_GYRO_YOUT1) / 10
-    GZ = read_word_2c(MPU_GYRO_ZOUT1) / 10
+    AX = read_word_2c(MPU_ACCEL_XOUT1)
+    AY = read_word_2c(MPU_ACCEL_YOUT1)
+    AZ = read_word_2c(MPU_ACCEL_ZOUT1)
+    GX = read_word_2c(MPU_GYRO_XOUT1)
+    GY = read_word_2c(MPU_GYRO_YOUT1)
+    GZ = read_word_2c(MPU_GYRO_ZOUT1)
+    
+    # Pre-process information read from sensor for better detection result.
+    AX = AX * 150
+    AY = AY * 300
+    AZ = AZ * 100
+    GX = GX * 10
+    GY = GY * 10
+    GZ = GZ * 10
     
     # Detect large change of data
     test = 0
@@ -52,7 +60,7 @@ while (1):
         if ((AY > 700) or (AY < -700)):
             test = 1
         else:
-            if ((AZ > 2200) or (AZ < 700)):
+            if ((AZ > 1700) or (AZ < 200)):
                 test = 1
             else:
                 if ((GX > 700) or (GX < -700)):
