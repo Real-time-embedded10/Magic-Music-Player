@@ -25,7 +25,7 @@ Realize graphical connection with PC; <br>
 help to test signal communication with PC; <br>
 grasp the signal from gesture recognition and transmit to PC. <br>
 Notice: <br>
-Gesture recognition files should be included in this file to provide control signals.
+Gesture recognition files should be included in this folder to provide control signals.
 
 
 
