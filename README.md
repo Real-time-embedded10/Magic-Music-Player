@@ -33,7 +33,7 @@ Here is the PCB Layout and Connection<br>
 For further information and instruction about PCB Design please [click here](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Hardware).
 
 [***Software***](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software)<br>
-Our Software contains two parts: **Hand Gesture Recognition** and **UI Software Design**(Communication and Digital signal Processing).<br>
+Our Software contains two parts: **Hand Gesture Recognition** and **UI Software Design** (Communication and Digital signal Processing).<br>
 ![](https://github.com/Real-time-embedded10/Magic-Music-Player/blob/master/Image/Software.jpg)<br>
 
 [*Hand Gesture Recognition*](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Hand%20Gesture%20Recognition)<br>
