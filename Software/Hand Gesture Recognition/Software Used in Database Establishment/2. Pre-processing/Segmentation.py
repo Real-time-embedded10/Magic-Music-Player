@@ -85,9 +85,10 @@ for i in range(marknumber):
         for c in range(6):
             savesample[(i * 31 + r), c] = result[(positionmark[i, 0] - 9 + r), c]
 
-
+# Save the position information of gesture in './positionmark.txt'
 x = np.real(positionmark)
 save(x,'./positionmark.xlsx')
 
+# Save segmented result in './savesample.txt'
 y = np.real(savesample)
 save(y,'./savesample.xlsx')
