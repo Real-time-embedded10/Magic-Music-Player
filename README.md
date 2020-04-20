@@ -9,7 +9,7 @@ Introduction
 **Main Function**<br>
 Export source from PC; <br>
 Equipped control UI on PC; <br>
-Recognise Hand Gesture in real time; <br>
+Recognize Hand Gesture in real time; <br>
 Change music tone/volume by gestures in the process of playing music.<br>
 
 **Hardware Requirement**<br>
@@ -28,7 +28,7 @@ Our Work
 --
 [***PCB Design***](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Hardware)<br>
 A current circuit was designed, and it can obtain information about accelerometer output, gyroscope output and temperature stably. The basic component used was MPU6050.<br>
-Here is the PCB Layout and Connection<br>
+Here is the PCB Layout and Connection. <br>
 ![](https://github.com/Real-time-embedded10/Magic-Music-Player/blob/master/Image/PCB_design.jpg)<br>
 For further information and instruction about PCB Design please [click here](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Hardware).
 
@@ -38,7 +38,7 @@ Our Software contains two parts: **Hand Gesture Recognition** and **UI Software 
 
 [*Hand Gesture Recognition*](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Hand%20Gesture%20Recognition)<br>
 A real-time sensor-based dynamic hand gesture recognition system in raspberry pi, capable of automatically identifying whether a gesture is inputted and then translating it in the form of text, is developed. <br>
-[Here is C++ code](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Hand%20Gesture%20Recognition/Real%20Time%20Recognition%20System) that use Raspberry pi to recognize hand gesture in real time. <br>
+[Here is C++ codes](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Hand%20Gesture%20Recognition/Real%20Time%20Recognition%20System) that use Raspberry pi to recognize hand gesture in real time. <br>
 Besides, a [DATABASE](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Hand%20Gesture%20Recognition/DATABASE), including 6 hand gestures, is established. <br>
 Codes used to [machine learning model training](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Hand%20Gesture%20Recognition/Software%20Used%20in%20Database%20Establishment) and [model testing](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Hand%20Gesture%20Recognition/Software%20Used%20in%20Testing) are also avaiable in this Repository.<br>
 ![](https://github.com/Real-time-embedded10/Magic-Music-Player/blob/master/Image/HandGesture_Result.jpg)<br>
