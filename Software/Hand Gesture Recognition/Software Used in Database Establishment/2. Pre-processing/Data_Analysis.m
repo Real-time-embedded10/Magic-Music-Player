@@ -1,4 +1,5 @@
-gesture = table2array(result);
+% The aim of this file is to analyze what the gesture input looks like and to find suitable parameters for segmentation.
+gesture = table2array(sample); % Read data of all samples collected.
 [row, col] = size(gesture)
 n = 1:(row-1);
 m = 1:row;
