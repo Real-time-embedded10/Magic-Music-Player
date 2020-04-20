@@ -12,9 +12,9 @@ This folder contains code for building GUI software on Windows.[click here](http
  
  
 **Main Function**<br>
-Import music files from PC database; <br>
+Import music files from PC database and build playlist; <br>
 reallize basic functions of music player(Play, stop, Next track, Previous track, change playrate etc.); <br>
-realize communication with raspberry pi via tcp socket. <br>
+build communication with raspberry pi via tcp socket. <br>
 
 
 **Raspberry Pi**<br>
@@ -22,8 +22,8 @@ This folder contains code for building GUI software on raspberry pi.[click here]
 
 **Main Function**<br>
 Realize graphical connection with PC; <br>
-help to test signal communication with PC; <br>
-grasp the signal from gesture recognition and transmit to PC. <br>
+help to test signal transmission with PC; <br>
+read the signal from gesture recognition and transmit to PC. <br>
 Notice: <br>
 Gesture recognition files should be included in this folder to provide control signals.
 
