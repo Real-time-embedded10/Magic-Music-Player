@@ -7,7 +7,7 @@ The GUI design uses QT development enviroment.
 Introduction
 --
 **PC**<br>
-This folder contains code for building GUI software on Windows.[click here](https://github.com/Real-time-embedded10/Magic-Music-Player/edit/master/Software/Digital%20Signal%20Processing%20and%20UI%20Design/PC)
+This folder contains code for building GUI software on Windows and a packaged software program.[click here](https://github.com/Real-time-embedded10/Magic-Music-Player/edit/master/Software/Digital%20Signal%20Processing%20and%20UI%20Design/PC)
  <br>
  
  
