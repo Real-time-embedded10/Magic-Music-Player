@@ -10,7 +10,7 @@ In this project, the hand movement are needed to be analyzed, and thereby accele
 
 Parameters Setting
 --
-**Sampling speed** and **acceleration range** are the two main significant parameters. During data collection, the actual sampling period is set to 0.05s (20Hz), so the sampling speed of the sensor needs to be greater than 20Hz. The acceleration range is set from -8g to 8g, since according to our test, the real-time acceleration range will never exceed 8g.<br>
+**Sampling speed** and **acceleration range** are the two main significant parameters. During data collection, the actual sampling period is set to 0.05s (20Hz), so the range of sampling speed of the sensor needs to be greater than 20Hz. The acceleration range is set from -8g to 8g, since according to our test, the real-time acceleration range will never exceed 8g.<br>
 There are two **communication methods** to read data from MPU6050 to Raspberry Pi, namely Universal Asynchronous Receiver/Transmitter (UART) and Inter-Integrated Circuit (I2C). I2C was selected. It has a half-duplex mode, which means that several devices can share the same I2C line at the same time. Another reason for using I2C communication method is that the output data can be obtained from the corresponding address in a more accurate and stable way.<br>
 
 Install I2C library.<br>
