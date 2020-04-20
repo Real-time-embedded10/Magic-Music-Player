@@ -5,15 +5,6 @@ All code written in python and MATLAB is only used for data pre-analysis or mode
 
 Introduction
 --
-A real-time sensor-based dynamic hand gesture recognition system in raspberry pi, capable of automatically identifying whether a gesture is inputted and then translating it in the form of text, is introduced. The recognition result will be used as control signal sent to pc to control signal processing. <br>
-
-The work is summarized as follows.<br>
->* A database containing six gestures (forward, backward, right, left, up and down) was built, of which 30 samples played by 6 people were mapped for each gesture. Therefore, in our database, there are a total of 1,080 samples.<br>
->* A method that can automatically determine whether a gesture is inputted and segment useful information was developed, and it tries to reduce noise interference as much as possible. Therefore, it can detect the gesture with high acuracy.<br> 
->* By using several statistical algorithms, 21 key features were extracted to represent each original sample, which reduces the computational complexity and increases classification successful rate.<br>
->* Using supervised machine learning algorithms, a classifier model was established which can complete classification effectively in a relatively short time.<br>
-
-<br>
 Here are four folders, which are DATABASE, Real Time Recognition System, Software Used in Database Establishment and Software Used in Testing.<br>
 <br>
 
