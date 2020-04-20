@@ -33,10 +33,12 @@ def datatest(x,a):
             xtrain[i,j] = x[randomarray[i+20]+a,j]
     return xtest, xtrain
 
-
+# Read information of extracted key features of all samples. 
 result = excel_to_matrix('./feature.xlsx')
 x = np.real(result)
-#F = Forward, B = Backward, L = Left, R = Right, U = Up, D = Down
+# F = Forward, B = Backward, L = Left, R = Right, U = Up, D = Down
+# 160 samples of each gesture are selected randomly as training samples.
+# The remaining 20 samples per gesture are used to test the trained model.
 xtestF, xtrainF = datatest(x,0)
 xtestB, xtrainB = datatest(x,180)
 xtestL, xtrainL = datatest(x,360)
@@ -44,19 +46,24 @@ xtestR, xtrainR = datatest(x,540)
 xtestU, xtrainU = datatest(x,720)
 xtestD, xtrainD = datatest(x,900)
 
+# Creat the testing data matrix.
 xtest = createset (xtestF,xtestB)
 xtest = createset (xtest,xtestL)
 xtest = createset (xtest,xtestR)
 xtest = createset (xtest,xtestU)
 xtest = createset (xtest,xtestD)
 
+# Creat the training data matrix.
 xtrain = createset (xtrainF,xtrainB)
 xtrain = createset (xtrain,xtrainL)
 xtrain = createset (xtrain,xtrainR)
 xtrain = createset (xtrain,xtrainU)
 xtrain = createset (xtrain,xtrainD)
+
+# Labels of supervised training model. 
 y = [0] * 160 + [1] * 160 + [2] * 160 + [3] * 160 + [4] * 160 + [5] * 160
 
+# SVM classifier.
 clf = svm.SVC(C=1.0, cache_size=200, class_weight=None,
     decision_function_shape='ovo', kernel='linear',
     max_iter=-1, probability=False, random_state=None, shrinking=True,
@@ -64,7 +71,7 @@ clf = svm.SVC(C=1.0, cache_size=200, class_weight=None,
 
 clf.fit(xtrain,y)
 
-###F
+### Forward
 yF = 0
 yB = 0
 yL = 0
@@ -88,7 +95,7 @@ for i in range(20):
 print('Forward')
 print('F= ', yF,'B= ', yB,'L= ', yL,'R= ', yR,'U= ', yU,'D= ', yD)
 
-###B
+### Backward
 yF = 0
 yB = 0
 yL = 0
@@ -113,7 +120,7 @@ print('Backward')
 print('F= ', yF,'B= ', yB,'L= ', yL,'R= ', yR,'U= ', yU,'D= ', yD)
 
 
-###L
+### Left
 yF = 0
 yB = 0
 yL = 0
@@ -138,7 +145,7 @@ print('Left')
 print('F= ', yF,'B= ', yB,'L= ', yL,'R= ', yR,'U= ', yU,'D= ', yD)
 
 
-###R
+### Right
 yF = 0
 yB = 0
 yL = 0
@@ -164,7 +171,7 @@ print('F= ', yF,'B= ', yB,'L= ', yL,'R= ', yR,'U= ', yU,'D= ', yD)
 
 
 
-###U
+### Up 
 yF = 0
 yB = 0
 yL = 0
@@ -189,7 +196,7 @@ print('Up')
 print('F= ', yF,'B= ', yB,'L= ', yL,'R= ', yR,'U= ', yU,'D= ', yD)
 
 
-###D
+### Down
 yF = 0
 yB = 0
 yL = 0
