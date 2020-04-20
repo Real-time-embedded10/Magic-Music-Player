@@ -38,7 +38,6 @@ FeatureExtraction_demo
 This demo is used to show how to achieve feature extraction in real time, and extract 21 key features for each gesture. <br>
 ```
 fea.extractionProcess(seg.recordTargetXA, seg.recordTargetYA, seg.recordTargetZA, seg.recordTargetXG, seg.recordTargetYG, seg.recordTargetZG);
-}
 ```
 Make sure that files: `CMakeLists.txt`, `MPU6050_Registers.h`, `MPU6050_Types.h`, `MPU6050.h`, `MPU6050.cpp`, `Segmentation.h`,`Segmentation.cpp`, `FeatureExtraction.h`, `FeatureExtraction.cpp` and `FeatureExtraction_demo.cpp` are in one folder. <br>
 
