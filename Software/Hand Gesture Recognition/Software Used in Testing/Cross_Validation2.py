@@ -28,7 +28,11 @@ def prediction(array):
         y = 5
     return y
 
+
+# Read information of extracted key features of all samples. 
 result = excel_to_matrix('./feature.xlsx')
+# w is our weight martix which will be used to establish machine learning model.
+# b is our bias martix which will also be used to establish machine learning model.
 w = excel_to_matrix('./w.xlsx')
 b = np.array([0.1545268, 0.11176813, -0.39776308, 0.07103815, -0.07802755, 0.13513086])
 
@@ -36,7 +40,7 @@ rows, cols = result.shape
 number = rows//6
 fea = result/(10^4)
 
-###F
+### Forward
 yF = 0
 yB = 0
 yL = 0
@@ -61,7 +65,7 @@ for i in range(number):
 print('Forward')
 print('F= ', yF,'B= ', yB,'L= ', yL,'R= ', yR,'U= ', yU,'D= ', yD)
 
-###B
+### Backward
 yF = 0
 yB = 0
 yL = 0
@@ -87,7 +91,7 @@ print('Backward')
 print('F= ', yF,'B= ', yB,'L= ', yL,'R= ', yR,'U= ', yU,'D= ', yD)
 
 
-###L
+### Left
 yF = 0
 yB = 0
 yL = 0
@@ -113,7 +117,7 @@ print('Left')
 print('F= ', yF,'B= ', yB,'L= ', yL,'R= ', yR,'U= ', yU,'D= ', yD)
 
 
-###R
+### Right
 yF = 0
 yB = 0
 yL = 0
@@ -140,7 +144,7 @@ print('F= ', yF,'B= ', yB,'L= ', yL,'R= ', yR,'U= ', yU,'D= ', yD)
 
 
 
-###U
+### Up
 yF = 0
 yB = 0
 yL = 0
@@ -166,7 +170,7 @@ print('Up')
 print('F= ', yF,'B= ', yB,'L= ', yL,'R= ', yR,'U= ', yU,'D= ', yD)
 
 
-###D
+### Down
 yF = 0
 yB = 0
 yL = 0
