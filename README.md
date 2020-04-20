@@ -51,6 +51,8 @@ Install libraries in Raspberry pi.
 ```
 sudo apt-get install i2c-tools
 sudo apt-get install wiringpi
+sudo apt-get install qt5-default
+sudo apt-get install qtcreator
 ```
 and make sure that all relevant files are in one folder.<br>
 
