@@ -17,9 +17,11 @@ MPU_GYRO_ZOUT1 = 0x47
 MPU_GYRO_ZOUT2 = 0x48
 MPU_POWER1 = 0x6b
 MPU_POWER2 = 0x6c
+
+# Default i2c address of MPU6050, and it can also be obtained by "sudo i2cdetect -y 1"
 address = 0x68
 
-# Read information
+# Read information from sensor
 def read_word_2c(adr):
     val = (bus.read_byte_data(address, adr) << 8) + bus.read_byte_data(address, adr + 1)
     # The acceleration range is set from -8g to 8g.
@@ -84,7 +86,7 @@ while (1):
     if (sum(test_new[0:20]) == 0) & (test_new[20] == 1) & (sum(test_new[21:23]) != 0):
         number = number+1
         print(number)
-           
+          
 
     AX2 = str(AX)
     AY2 = str(AY)
