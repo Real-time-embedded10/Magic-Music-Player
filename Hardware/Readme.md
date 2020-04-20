@@ -20,13 +20,18 @@ The MPU-60X0 uses three 16-bit ADCs for the gyroscope and accelerometer, respect
 ⑬	I2C communication interface up to 400Khz.<br>
 ⑭	Ultra-small package size: 4x4x0.9mm (QFN).<br>
 
-**Circuit Design**<br>
-The Block Diagram of MPU6050:<br>
+Circuit Design
+--
+**The Block Diagram of MPU6050:**<br>
 ![](https://github.com/Real-time-embedded10/Magic-Music-Player/blob/master/Hardware/MPU6050-Block%20Diagram.png)<br>
 The above picture is the internal structure diagram of MPU6050. Among them, SCL and SDA are I2C interfaces connected to MCU. Raspberry Pi controls MPU6050 through this I2C interface. There is also an I2C interface: AUX_CL and AUX_DA. This interface can be used to connect external slave devices. For example, magnetic sensors, so that a nine-axis sensor can be formed. VLOGIC is the voltage of the IO port. This pin can be as low as 1.8V. We generally connect it directly to VDD. AD0 is the address control pin from the I2C interface (connected to MCU). This pin controls the lowest bit of the IIC address. If it is connected to GND, the I2C address of MPU6050 is: 0X68, if it is connected to VDD, it is 0X69. Note: The address here does not contain the lowest bit of data transmission (the lowest bit is used to indicate read and write).<br>
 
-The Schematic Circuit Diagram:<br>
+**The Schematic Circuit Diagram:**<br>
 ![](https://github.com/Real-time-embedded10/Magic-Music-Player/blob/master/Hardware/Schematic%20Circuit%20Diagram.png)<br>
 Because the voltage working range of MPU60X0 is 2.375V-3.46V, a 3.3V low dropout voltage regulator circuit is added to the circuit diagram design to power the MPU6050, so the MPU6050 chip can be connected to the 3.3V or 5V output power of the Raspberry Pi. Pull-up resistors of 4.7K are added at both SDA and SCL. When connected to the system chip, MPU-60X0 always acts as a slave device. The SDA and SCL signal lines usually need to be connected to pull-up resistors to VDD. In addition, there is also a 4.7K pull-down resistor at AD0. In the actual connection, AD0 is floating, and the default I2C address is 0X68. The CLKIN pin of the MPU6050 can be used as an external clock input, but it is not used in this project, so it is directly connected to GND. VLOGIC is a digital I / O power supply voltage port, which can be directly connected to the VCC_3.3V power supply and connected with a bypass capacitor of 10uF. Connect a 0.1uF regulator filter capacitor at REGOUT. The power supply voltage and digital I / O power supply voltage should be provided at the VDD pin, and a 0.1uF bypass capacitor should be connected at the same time. A 10uF charge pump capacitor needs to be connected at CPOUT. The charge pump on the board provides the high voltage required by the MEMS oscillator and the output is at the CPOUT pin.<br>
+
+**PCB-Design:**<br>
+![](https://github.com/Real-time-embedded10/Magic-Music-Player/blob/master/Hardware/PCB_Design.png)<br>
+In the figure, the red line represents the top conductor layout, and the blue line represents the bottom conductor layout.The [front preview](https://github.com/Real-time-embedded10/Magic-Music-Player/blob/master/Hardware/physical_preview.png) and [back preview](https://github.com/Real-time-embedded10/Magic-Music-Player/blob/master/Hardware/physical_preview_back.png) can be viewed here.<br>
 
 For detailed information or data related to MPU6050, please refer to [the uploaded datasheet](https://github.com/Real-time-embedded10/Magic-Music-Player/blob/master/Hardware/MPU-60X0-Datasheet.pdf).<br>
