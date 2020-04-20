@@ -26,6 +26,23 @@ Digital signal processing algorithm to process song based on control signal rece
 
 Further information is available at our [wiki](https://github.com/Real-time-embedded10/Magic-Music-Player/wiki).<br>
 
+Pre-Requirement
+--
+Install libraries in Raspberry pi.
+```
+sudo apt-get install i2c-tools
+sudo apt-get install wiringpi
+```
+and make sure that all relevant files are in one folder.<br>
+
+To Run
+--
+```
+cmake .
+make
+./main
+```
+
 Authors
 --
 **tashanguanyan** - Xinyun Jiang (2227272J): I2C system, Hand Gesture Recognition (Database Establishment, Machine Learning Model Training and Real-time Recoginition System).<br>
