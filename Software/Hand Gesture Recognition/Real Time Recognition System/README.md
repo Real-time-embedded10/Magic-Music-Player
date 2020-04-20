@@ -1,7 +1,7 @@
 Real Time Recognition System
 ==
 Here are four demos (unit tests) provided to show how to acheive each stage of the proposed system to recognize gesture on Raspberry pi in real time. <br>
-To obtain detail explanation about, for example, why we do this process or how to determine parameters, please [click here](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Hand%20Gesture%20Recognition/Software%20Used%20in%20Database%20Establishment).<br>
+To obtain detail explanation about, for example, why we do this process or how to determine parameters, please see our [wiki](https://github.com/Real-time-embedded10/Magic-Music-Player/tree/master/Software/Hand%20Gesture%20Recognition/Software%20Used%20in%20Database%20Establishment).<br>
 
 Requirement
 --
